@@ -1,0 +1,40 @@
+
+create table users (
+user_id serial primary key,
+firstname varchar(50),
+lastname varchar(50),
+email varchar(50),
+password text
+);
+
+create table pedals (
+pedal_id serial primary key,
+brand varchar(100),
+model varchar(100),
+category varchar(200)
+);
+
+create table amplifier (
+amp_id serial primary key,
+brand varchar(100),
+make varchar(100),
+model varchar(100),
+watts integer,
+year integer,
+category varchar(200)
+);
+
+create table cabinet (
+cab_id serial primary key,
+brand varchar(100),
+make varchar(100),
+model varchar(100),
+year integer,
+ohms integer,
+category varchar(200)
+);
+
+create table user_studio (
+studio_id serial primary key,
+product_name varchar(200)
+);
