@@ -1,0 +1,203 @@
+.amp_dropdown {
+    display: flex;
+    height: 500px;
+    width: 75%;
+    margin: auto;
+    background: #fff;
+    border: 2px solid #232232;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.amp_card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5em;
+}
+
+.orange_rockerverb {
+    background-image: url('../../Assets/Orange.png');
+    height: 100%;
+    width: 233px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.orange_rockerverb:hover{
+    cursor: pointer;
+    border: 2px solid #232232;
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+        
+    
+}
+
+.ora_card {
+    height: 80%;
+    width: 80%;
+    background: #fff;
+    border: 2px solid #232232;
+    margin: 3em;
+}
+
+.orange_logo{
+    background-image: url('../../Assets/LogoOrange.png');
+    height: 100%;
+    width: 235px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+
+.fender_bassman {
+    background-image: url('../../Assets/Fender.png');
+    height: 100%;
+    width: 235px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fender_bassman:hover{
+    cursor: pointer;
+    border: 2px solid #232232;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+}
+
+.fen_card {
+    height: 80%;
+    width: 80%;
+    background: #fff;
+    border: 2px solid #232232;
+    margin: 3em;
+}
+
+.fender_logo{
+    background-image: url('../../Assets/LogoFender.png');
+    height: 100%;
+    width: 235px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+
+.hiwatt{
+    background-image: url('../../Assets/Hiwatt.png');
+    height: 100%;
+    width: 262px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hiwatt:hover{
+    cursor: pointer;
+    border: 2px solid #232232;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+}
+
+.hi_card {
+    height: 80%;
+    width: 80%;
+    background: #fff;
+    border: 2px solid #232232;
+    margin: 3em;
+}
+
+.hiwatt_logo{
+    background-image: url('../../Assets/LogoHiwatt.png');
+    height: 100%;
+    width: 235px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+
+.marshall_plexi {
+    background-image: url('../../Assets/Marshall.png');
+    height: 100%;
+    width: 270px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.marshall_plexi:hover{
+    cursor: pointer;
+    border: 2px solid #232232;
+    animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+}
+
+.mar_card {
+    height: 80%;
+    width: 80%;
+    background: #fff;
+    border: 2px solid #232232;
+    margin: 3em;
+}
+
+.marshall_logo{
+    background-image: url('../../Assets/LogoMarshall.png');
+    height: 100%;
+    width: 235px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+
+
+    @-webkit-keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+    @keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+    }
+    0% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+    }
+    } 
+  
+
+
+
+    @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    } 

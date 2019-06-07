@@ -1,0 +1,282 @@
+.pedal_dropdown {
+    display: flex;
+    height: 500px;
+    width: 75%;
+    margin: auto;
+    background: #fff;
+    border: 2px solid #232232;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.pedal_card1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5em;
+}
+
+.acapulco {
+    background-image: url('../../Assets/AcapulcoGold.png');
+    height: 100%;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.acapulco:hover{
+    cursor: pointer;
+    border: 2px solid #232232;
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;     
+}
+
+.aca_card {
+    height: 80%;
+    width: 80%;
+    background: #fff;
+    border: 2px solid #232232;
+    margin: 3em;
+}
+
+.arrows {
+    background-image: url('../../Assets/Arrows.png');
+    height: 100%;
+    width: 235px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.arrows:hover{
+    cursor: pointer;
+    border: 2px solid #232232;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+}
+
+.aro_card {
+    height: 80%;
+    width: 80%;
+    background: #fff;
+    border: 2px solid #232232;
+    margin: 3em;
+}
+
+.nepenthes{
+    background-image: url('../../Assets/Nepenthes.png');
+    height: 100%;
+    width: 262px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nepenthes:hover{
+    cursor: pointer;
+    border: 2px solid #232232;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+}
+
+.nep_card {
+    height: 80%;
+    width: 80%;
+    background: #fff;
+    border: 2px solid #232232;
+    margin: 3em;
+}
+
+.rat {
+    background-image: url('../../Assets/Rat.png');
+    height: 100%;
+    width: 270px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.rat:hover{
+    cursor: pointer;
+    border: 2px solid #232232;
+    animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+}
+
+.rat_card {
+    height: 80%;
+    width: 80%;
+    background: #fff;
+    border: 2px solid #232232;
+    margin: 3em;
+}
+
+.pedal_card2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5em;
+}
+
+.dispatch {
+    background-image: url('../../Assets/DispatchMaster.png');
+    height: 100%;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dispatch:hover{
+    cursor: pointer;
+    border: 2px solid #232232;
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;     
+}
+
+.dis_card {
+    height: 80%;
+    width: 80%;
+    background: #fff;
+    border: 2px solid #232232;
+    margin: 3em;
+}
+
+.supermoon {
+    background-image: url('../../Assets/Supermoon.png');
+    height: 100%;
+    width: 235px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.supermoon:hover{
+    cursor: pointer;
+    border: 2px solid #232232;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+}
+
+.sup_card {
+    height: 80%;
+    width: 80%;
+    background: #fff;
+    border: 2px solid #232232;
+    margin: 3em;
+}
+
+.pyramid{
+    background-image: url('../../Assets/Pyramids.png');
+    height: 100%;
+    width: 262px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pyramid:hover{
+    cursor: pointer;
+    border: 2px solid #232232;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+}
+
+.pyr_card {
+    height: 80%;
+    width: 80%;
+    background: #fff;
+    border: 2px solid #232232;
+    margin: 3em;
+}
+
+.phase {
+    background-image: url('../../Assets/Phase90.png');
+    height: 100%;
+    width: 270px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.phase:hover{
+    cursor: pointer;
+    border: 2px solid #232232;
+    animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+}
+
+.pha_card {
+    height: 80%;
+    width: 80%;
+    background: #fff;
+    border: 2px solid #232232;
+    margin: 3em;
+}
+
+
+    @-webkit-keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+    @keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+    }
+    0% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+    }
+    } 
+  
+
+
+
+    @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    } 

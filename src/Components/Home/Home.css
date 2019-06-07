@@ -1,0 +1,39 @@
+
+.header {
+    height: 15vh;
+    display: flex;
+    background: #fff;
+}
+
+.logo {
+    background-image: url('../../Assets/InTheMix.png');
+    height: 100%;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 3.3em
+}
+
+.logo_font{
+    font-size: 40px;
+    margin: .7em;
+}
+
+.log_btn {
+    width: 150px;
+    height: 30px;
+    
+}
+
+.gear_container {
+    height: 7.5vh;
+    margin-top: .7em;
+}
+
+
+
+
+
+
+
+

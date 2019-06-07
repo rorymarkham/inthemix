@@ -2,13 +2,12 @@ import React from 'react';
 import './App.css';
 import {HashRouter} from 'react-router-dom'
 import router from './router'
-import Navbar from './Components/Navbar'
-
+import Home from './Components/Home/Home'
 
 function App() {
   return (
     <HashRouter>
-      <Navbar/>
+      {/* <Home/> */}
       {router}
     </HashRouter>
   );

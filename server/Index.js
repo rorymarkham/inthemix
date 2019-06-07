@@ -3,6 +3,7 @@ const express = require('express')
 const session = require('express-session')
 const massive = require('massive')
 const auth_ctrl = require('./controllers/authController')
+const studio_ctrl = require('./controllers/studio_controllers')
 
 const app = express()
 
@@ -26,4 +27,6 @@ massive(CONNECTION_STRING).then((database) => {
 
 app.post('/auth/register', auth_ctrl.register)
 app.post('/auth/login', auth_ctrl.login)
+app.get('/auth/studio', auth_ctrl.getUserStudio)
 app.get('/auth/logout', auth_ctrl.logout)
+app.post('/api/studio/:id', studio_ctrl.addAmp)

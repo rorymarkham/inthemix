@@ -1,0 +1,81 @@
+.nav_container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.pedal_list {
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 0.5rem 0;
+    margin: 0.5rem 1rem;
+    width: 11rem;
+    background: transparent;
+    color: #fff;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.pedal_list:hover {
+    cursor: pointer;
+    color: #232232;
+    background: #fff;
+    border: 2px solid #232232;
+    background-image: url('../../Assets/Pedal.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70px
+    }
+
+.amp_list {
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 0.5rem 0;
+    margin: 0.5rem 1rem;
+    width: 11rem;
+    background: transparent;
+    color: #fff;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.amp_list:hover {
+    cursor: pointer;
+    color: #232232;
+    background: #fff;
+    border: 2px solid #232232;
+    background-image: url('../../Assets/Amp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70px
+}
+
+.link {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 0.5rem 0;
+    margin: 0.5rem 1rem;
+    width: 11rem;
+    background: transparent;
+    color: #fff;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.link:hover {
+    cursor: pointer;
+    color: #232232;
+    background: #fff;
+    border: 2px solid #232232;
+    background-image: url('../../Assets/Studio.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70px
+    }

@@ -1,0 +1,10 @@
+.login_fields {
+    display: flex;
+   flex-direction: column;
+}
+
+.register_fields {
+    display: flex;
+   flex-direction: column;
+}
+

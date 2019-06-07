@@ -1,11 +1,11 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
-import Home from './Components/Home'
-import Login from './Components/Login'
-import Navbar from './Components/Navbar'
-import Amplifier from './Components/Amplifier'
-import Pedal from './Components/Pedal'
-import Studio from './Components/Studio'
+import Home from './Components/Home/Home'
+import Login from './Components/Login/Login'
+import Navbar from './Components/Navbar/Navbar'
+import Amplifier from './Components/Amplifier/Amplifier'
+import Pedal from './Components/Pedal/Pedal'
+import Studio from './Components/Studio/Studio'
 
 export default (
     <Switch>
