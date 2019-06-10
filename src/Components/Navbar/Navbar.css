@@ -4,6 +4,32 @@
     flex-direction: column;
 }
 
+.home_link {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 0.5rem 0;
+    margin: 0.5rem 1rem;
+    width: 11rem;
+    background: transparent;
+    color: #fff;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.home_link:hover {
+    cursor: pointer;
+    color: #232232;
+    background: #fff;
+    border: 2px solid #232232;
+    background-image: url('../../Assets/InTheMix.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px
+    }
+
 .pedal_list {
     display: inline-block;
     border-radius: 3px;
@@ -51,10 +77,10 @@
     background-image: url('../../Assets/Amp.png');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 70px
+    height: 70px;
 }
 
-.link {
+.studio_link {
     text-decoration: none;
     display: inline-block;
     border-radius: 3px;
@@ -69,7 +95,7 @@
     font-weight: bold;
 }
 
-.link:hover {
+.studio_link:hover {
     cursor: pointer;
     color: #232232;
     background: #fff;
@@ -77,5 +103,6 @@
     background-image: url('../../Assets/Studio.png');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 70px
+    height: 50px;
+    
     }

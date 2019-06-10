@@ -3,6 +3,7 @@ import axios from 'axios'
 import {connect} from 'react-redux'
 import {updateUser, clearUser} from '../redux/userReducer'
 import {Link} from 'react-router-dom'
+import Navbar from '../Navbar/Navbar'
 
 class Studio extends Component {
     constructor(){
@@ -35,8 +36,10 @@ class Studio extends Component {
         const mappedProducts = this.state.products.map(product => {
             return (
                 <div>
-                    <h1>{product.product_name}</h1>
-                    <img src={product.product_img} alt="products yo"/>
+                    <div className='product_container'>
+                        <h4>{product.product_name}</h4>
+                        <img src={product.product_img} height="100%" width="235" alt="products yo"/>
+                    </div>
                 </div>
             )
         })
@@ -45,7 +48,7 @@ class Studio extends Component {
         return (
             <div>
                 <h1>Studio</h1>
-                <Link to='/'>Home</Link>
+                <Navbar/>
                 <button onClick={this.handleUserLogout}>Logout</button>
                 {mappedProducts}
                 
@@ -67,3 +70,17 @@ export default connect(
     mapStateToProps,
     mapDispatchToProps
 )(Studio)
+
+
+
+// removeGuitar(id){
+//     axios
+//     .delete(`/api/deleteGuitar/${id}`).then((res) => {
+//       this.setState({products: res.data})
+//       toast.error('☠️Scrap Wood☠️')
+//     })
+//     .catch(error => {toast.error ('You Suck')})
+//   }
+
+{/* <button className='btn_remove' 
+onClick={ () => this.removeGuitar(event.id)}>Remove</button> */}

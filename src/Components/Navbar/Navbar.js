@@ -32,12 +32,14 @@ class Navbar extends Component {
             <div>
                 <div className='nav_container'>
                     <div>
+
+                    <Link className="home_link" to='/'>Home</Link>
                     <button className='pedal_list' 
                     onClick={this.showPedMenu}>Pedals</button>
                     <button className='amp_list' 
                     onClick={this.showAmpMenu}>Amps</button>
 
-                    <Link className="link" to='/studio'>Studio </Link>
+                    <Link className="studio_link" to='/studio'>Studio </Link>
                     </div>
                     
                     <div>

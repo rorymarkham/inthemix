@@ -11,8 +11,7 @@ class Home extends Component {
            <div className='logo_container'>
                 <div className='header'>
                     <div className='logo'></div>
-                    <div className='logo_font'>In The Mix</div>
-                    <Link to='/'>home</Link>
+                    <div className='logo_font'></div>
                     <Login/>
             </div>
             <div className='gear_container'>

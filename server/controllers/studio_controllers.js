@@ -10,5 +10,9 @@ module.exports = {
         .then((updatedStudio) => {
             res.status(200).send(updatedStudio[0])
         })     
-    }
+    },
+
+    // deleteAmp: (req, res) => {
+    //     const 
+    // }
 }
