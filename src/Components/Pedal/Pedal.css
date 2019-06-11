@@ -1,7 +1,7 @@
 .pedal_dropdown {
     display: flex;
     height: 500px;
-    width: 75%;
+    width: 90%;
     margin: auto;
     background: #fff;
     border: 2px solid #232232;
@@ -35,7 +35,8 @@
         -webkit-animation-duration: 1s;
         animation-duration: 1s;
         -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;     
+        animation-fill-mode: both;  
+        box-shadow: 5px 5px 5px ;      
 }
 
 .aca_card {
@@ -44,6 +45,20 @@
     background: #fff;
     border: 2px solid #232232;
     margin: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.aca_card:hover{
+    height: 90%;
+    width: 90%;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+    box-shadow: 5px 5px 5px ; 
 }
 
 .eqd_logo{
@@ -60,6 +75,7 @@
     width: 65px;
     background-size: contain;
     background-repeat: no-repeat;
+
 }
 
 .arrows:hover{
@@ -71,6 +87,7 @@
         animation-duration: 1s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both; 
+        box-shadow: 5px 5px 5px ;   
 }
 
 .aro_card {
@@ -79,6 +96,20 @@
     background: #fff;
     border: 2px solid #232232;
     margin: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.aro_card:hover{
+    height: 90%;
+    width: 90%;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+    box-shadow: 5px 5px 5px ; 
 }
 
 .eqd_logo{
@@ -106,6 +137,7 @@
         animation-duration: 1s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both; 
+        box-shadow: 5px 5px 5px ;   
 }
 
 .nep_card {
@@ -114,6 +146,20 @@
     background: #fff;
     border: 2px solid #232232;
     margin: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.nep_card:hover{
+    height: 90%;
+    width: 90%;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+    box-shadow: 5px 5px 5px ; 
 }
 
 .electro_logo{
@@ -140,6 +186,7 @@
         animation-duration: 1s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both; 
+        box-shadow: 5px 5px 5px ;   
 }
 
 .rat_card {
@@ -148,6 +195,20 @@
     background: #fff;
     border: 2px solid #232232;
     margin: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.rat_card:hover{
+    height: 90%;
+    width: 90%;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+    box-shadow: 5px 5px 5px ; 
 }
 
 .proco_logo{
@@ -180,7 +241,8 @@
         -webkit-animation-duration: 1s;
         animation-duration: 1s;
         -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;     
+        animation-fill-mode: both;  
+        box-shadow: 5px 5px 5px ;      
 }
 
 .dis_card {
@@ -189,6 +251,20 @@
     background: #fff;
     border: 2px solid #232232;
     margin: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.dis_card:hover{
+    height: 90%;
+    width: 90%;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+    box-shadow: 5px 5px 5px ; 
 }
 
 .eqd_logo{
@@ -216,6 +292,7 @@
         animation-duration: 1s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both; 
+        box-shadow: 5px 5px 5px ;   
 }
 
 .sup_card {
@@ -224,6 +301,20 @@
     background: #fff;
     border: 2px solid #232232;
     margin: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.sup_card:hover{
+    height: 90%;
+    width: 90%;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+    box-shadow: 5px 5px 5px ; 
 }
 
 .mrblack_logo{
@@ -232,6 +323,7 @@
     width: 150px;
     background-size: contain;
     background-repeat: no-repeat; 
+    
 }
 
 .pyramid{
@@ -251,6 +343,7 @@
         animation-duration: 1s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both; 
+        box-shadow: 5px 5px 5px ;   
 }
 
 .pyr_card {
@@ -259,6 +352,20 @@
     background: #fff;
     border: 2px solid #232232;
     margin: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.pyr_card:hover{
+    height: 90%;
+    width: 90%;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+    box-shadow: 5px 5px 5px ; 
 }
 
 .eqd_logo{
@@ -285,6 +392,7 @@
         animation-duration: 1s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both; 
+        box-shadow: 5px 5px 5px ;   
 }
 
 .pha_card {
@@ -293,6 +401,20 @@
     background: #fff;
     border: 2px solid #232232;
     margin: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.pha_card:hover{
+    height: 90%;
+    width: 90%;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+    box-shadow: 5px 5px 5px ; 
 }
 
 .mxr_logo{

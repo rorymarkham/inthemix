@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 import './Pedal.css'
+import ReactAudioPlayer from 'react-audio-player'
+
+//songs
+import PsychSurf from '../../Songs/PsychSurf.m4a'
+import Ender from '../../Songs/Enderfender.wav'
 
 class Pedal extends Component {
     constructor(){
@@ -124,7 +129,6 @@ class Pedal extends Component {
         return (
             <div className='pedal_dropdown'>  
                 <div className='pedal_card1' > 
-                    <h4>Distortion/Overdirve</h4>
                     <div className='acapulco' onClick={this.showAcapulco}></div>
                     <div className='arrows' onClick={this.showArrows}></div>
                     <div className='nepenthes' onClick={this.showNepenthes}></div>
@@ -132,19 +136,82 @@ class Pedal extends Component {
                  </div>
                     {this.state.acapulcoMenu ? <div className='aca_card'>
                     <div className='eqd_logo'></div>
+                    <div className='psych_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={PsychSurf}
+                        controls/>
+                    </div>
+                    <div className='ender_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={Ender}
+                        controls/>
+                    </div>
                     </div> : null}
                     {this.state.arrowsMenu ? <div className='aro_card'>
                     <div className='eqd_logo'></div>
+                    <div className='psych_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={PsychSurf}
+                        controls/>
+                    </div>
+                    <div className='ender_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={Ender}
+                        controls/>
+                    </div>
                     </div> : null}
                     {this.state.nepenthesMenu ? <div className='nep_card'>
                     <div className='electro_logo'></div>
+                    <div className='psych_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={PsychSurf}
+                        controls/>
+                    </div>
+                    <div className='ender_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={Ender}
+                        controls/>
+                    </div>
                     </div> : null}
                     {this.state.ratMenu ? <div className='rat_card'>
                     <div className='proco_logo'></div>
+                    <div className='psych_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={PsychSurf}
+                        controls/>
+                    </div>
+                    <div className='ender_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={Ender}
+                        controls/>
+                    </div>
                     </div> : null}
 
                     <div className='pedal_card2' > 
-                    <h4>Modulation</h4>
                     <div className='dispatch' onClick={this.showDispatch}></div>
                     <div className='supermoon' onClick={this.showSuper}></div>
                     <div className='phase' onClick={this.showPhase}></div>
@@ -152,15 +219,79 @@ class Pedal extends Component {
                  </div>
                     {this.state.dispatchMenu ? <div className='dis_card'>
                     <div className='eqd_logo'></div>
+                    <div className='psych_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={PsychSurf}
+                        controls/>
+                    </div>
+                    <div className='ender_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={Ender}
+                        controls/>
+                    </div>
                     </div> : null}
                     {this.state.superMenu ? <div className='sup_card'>
                     <div className='mrblack_logo'></div>
+                    <div className='psych_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={PsychSurf}
+                        controls/>
+                    </div>
+                    <div className='ender_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={Ender}
+                        controls/>
+                    </div>
                     </div> : null}
                     {this.state.phaseMenu ? <div className='pha_card'>
                     <div className='mxr_logo'></div>
+                    <div className='psych_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={PsychSurf}
+                        controls/>
+                    </div>
+                    <div className='ender_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={Ender}
+                        controls/>
+                    </div>
                     </div> : null}
                     {this.state.pyramidMenu ? <div className='pyr_card'>
                     <div className='eqd_logo'></div>
+                    <div className='psych_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={PsychSurf}
+                        controls/>
+                    </div>
+                    <div className='ender_container'>
+                        <h4>Iso Track</h4>
+                        <ReactAudioPlayer controls/>
+                        <h4>In the mix</h4>
+                        <ReactAudioPlayer 
+                        src={Ender}
+                        controls/>
+                    </div>
                     </div> : null}
             </div>
         )

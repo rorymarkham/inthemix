@@ -27,7 +27,8 @@
     background-image: url('../../Assets/InTheMix.png');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 50px
+    height: 50px;
+    box-shadow: 5px 5px 5px ;   
     }
 
 .pedal_list {
@@ -52,7 +53,8 @@
     background-image: url('../../Assets/Pedal.png');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 70px
+    height: 70px;
+    box-shadow: 5px 5px 5px ;   
     }
 
 .amp_list {
@@ -78,6 +80,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     height: 70px;
+    box-shadow: 5px 5px 5px ;   
 }
 
 .studio_link {
@@ -104,5 +107,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     height: 50px;
+    box-shadow: 5px 5px 5px ;   
     
     }
