@@ -7,13 +7,28 @@ import ReactAudioPlayer from 'react-audio-player'
 
 // images
 import OrangeAmp from '../../Assets/Orange.png';
-import HiwattAmp from '../../Assets/Hiwatt.png';
 import FenderAmp from '../../Assets/Fender.png';
 import MarshallAmp from '../../Assets/Marshall.png';
+import SoldanoAmp from '../../Assets/Soldano.png'
 
 //songs
 import PsychSurf from '../../Songs/PsychSurf.m4a'
 import Ender from '../../Songs/Enderfender.wav'
+import Thrash from '../../Songs/Thrash.wav'
+import ThrashMix from '../../Songs/ThrashMix.wav'
+import Chugga from '../../Songs/Chugga.wav'
+import ChuggaMix from '../../Songs/ChuggaMix.wav'
+import Bitchin from '../../Songs/Bitchin.wav'
+import BitchinMix from '../../Songs/BitchinMix.wav'
+import BitchinSolo from '../../Songs/BitchinSolo.wav'
+import BitchinMixSolo from '../../Songs/BitchinMixSolo.wav'
+import Jazzy from '../../Songs/Jazzy.wav'
+import JazzyMix from '../../Songs/JazzyMix.wav'
+import PELDis from '../../Songs/PELDis.wav'
+import PELMix from '../../Songs/PELMix.wav'
+
+
+
 
 class Amplifier extends Component {
     constructor() {
@@ -83,40 +98,54 @@ class Amplifier extends Component {
                     <div className='marshall_plexi' onClick={this.showMarshall}></div>
                 </div>
                 {this.state.orangeMenu ? <div className='ora_card'>
-                    <div className='orange_logo'></div>
-                    <div className='psych_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                    <div className="amp-text">
+                    <div className='orange_logo'>
+                    <div className='ora_big'></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <div className='ora_dirt'></div>
+                    <div className='ora_dirt_container'>
+                        <h4>Bitchin</h4>
                         <ReactAudioPlayer 
-                        src={PsychSurf}
+                        src={Bitchin}
+                        controls/>
+                        <h4>Bitchin Mix</h4>
+                        <ReactAudioPlayer 
+                        src={BitchinMix}
                         controls/>
                     </div>
-                    <div className='ender_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat. Sed vulputate nulla non dolor gravida eleifend. Aliquam congue, sem a pretium </p>
+                    <div className='ora_clean'></div>
+                    <div className='ora_dirt_container'>
+                        <h4>Clean</h4>
                         <ReactAudioPlayer 
-                        src={Ender}
+                        src={PELDis}
+                        controls/>
+                        <h4>Clean Mix</h4>
+                        <ReactAudioPlayer 
+                        src={PELMix}
                         controls/>
                     </div>
+                        </div>
                         <button onClick={() => this.addToStudio('orange rockerverb', OrangeAmp)}>Add to Studio</button>
                 </div> : null}
 
                 {this.state.fenderMenu ? <div className='fen_card'>
-                    <div className='fender_logo'></div>
                     <div className="amp-text">
+                    <div className='fender_logo'></div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat. Sed vulputate nulla non dolor gravida eleifend. Aliquam congue, sem a pretium lobortis, ante lectus egestas dolor, et congue tellus nunc semper quam. In sagittis ut diam a fermentum. Vestibulum pharetra dolor eget nunc egestas, eu pharetra felis luctus. Nunc ut ligula vel justo pellentesque ultricies. Quisque accumsan varius odio a iaculis. Vestibulum congue augue dolor, vel dapibus sapien dapibus venenatis. Duis mauris nisi, porttitor congue nisi et, tempus varius ante. Fusce sit amet pretium elit.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat. Sed vulputate nulla non dolor gravida eleifend. Aliquam congue, sem a pretium lobortis, ante lectus egestas dolor, et congue tellus nunc semper quam. In sagittis ut diam a fermentum. Vestibulum pharetra dolor eget nunc egestas, eu pharetra felis luctus. Nunc ut ligula vel justo pellentesque ultricies. Quisque accumsan varius odio a iaculis. Vestibulum congue augue dolor, vel dapibus sapien dapibus venenatis. Duis mauris nisi, porttitor congue nisi et, tempus varius ante. Fusce sit amet pretium elit.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat. Sed vulputate nulla non dolor gravida eleifend. Aliquam congue, sem a pretium lobortis, ante lectus egestas dolor, et congue tellus nunc semper quam. In sagittis ut diam a fermentum. Vestibulum pharetra dolor eget nunc egestas, eu pharetra felis luctus. Nunc ut ligula vel justo pellentesque ultricies. Quisque accumsan varius odio a iaculis. Vestibulum congue augue dolor, vel dapibus sapien dapibus venenatis. Duis mauris nisi, porttitor congue nisi et, tempus varius ante. Fusce sit amet pretium elit.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat. Sed vulputate nulla non dolor gravida eleifend. Aliquam congue, sem a pretium lobortis, ante lectus egestas dolor, et congue tellus nunc semper quam. In sagittis ut diam a fermentum. Vestibulum pharetra dolor eget nunc egestas, eu pharetra felis luctus. Nunc ut ligula vel justo pellentesque ultricies. Quisque accumsan varius odio a iaculis. Vestibulum congue augue dolor, vel dapibus sapien dapibus venenatis. Duis mauris nisi, porttitor congue nisi et, tempus varius ante. Fusce sit amet pretium elit.</p>
                     </div>
                     <div className='psych_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                        <h4>Jazzy</h4>
                         <ReactAudioPlayer 
-                        src={PsychSurf}
+                        src={Jazzy}
+                        controls/>
+                        <h4>JazzyMix</h4>
+                        <ReactAudioPlayer 
+                        src={JazzyMix}
                         controls/>
                     </div>
                     <div className='ender_container'>
@@ -132,41 +161,57 @@ class Amplifier extends Component {
                 </div> : null}
 
                 {this.state.hiwattMenu ? <div className='hi_card'>
-                    <div className='hiwatt_logo'></div>
+                    <div className="amp-text">
+                    <div className='hiwatt_logo'>
+                    <div className='sol_big'></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <div className='sold_crunch'></div>
                     <div className='psych_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                        <h4>Chugga</h4>
                         <ReactAudioPlayer 
-                        src={PsychSurf}
+                        src={Chugga}
+                        controls/>
+                        <h4>Chugga Mix</h4>
+                        <ReactAudioPlayer 
+                        src={ChuggaMix}
                         controls/>
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <div className='sold_crunch'></div>
                     <div className='ender_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                        <h4>Thrasher</h4>
                         <ReactAudioPlayer 
-                        src={Ender}
+                        src={Thrash}
+                        controls/>
+                        <h4>Thrasher Mix</h4>
+                        <ReactAudioPlayer 
+                        src={ThrashMix}
                         controls/>
                     </div>
-                        <button onClick={() => this.addToStudio('hiwatt dr103', HiwattAmp)}>Add to Studio</button>
+                    </div>
+                        <button onClick={() => this.addToStudio('soldano SLO 100', SoldanoAmp)}>Add to Studio</button>
                 </div> : null}
                 {this.state.marshallMenu ? <div className='mar_card'>
                     <div className='marshall_logo'></div>
                     <div className='psych_container'>
                         <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
+                        <ReactAudioPlayer 
+                        // src={}
+                        controls/>
                         <h4>In the mix</h4>
                         <ReactAudioPlayer 
                         src={PsychSurf}
                         controls/>
                     </div>
                     <div className='ender_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                        <h4>Solo</h4>
                         <ReactAudioPlayer 
-                        src={Ender}
+                        src={BitchinSolo}
+                        controls/>
+                        <h4>Solo Mix</h4>
+                        <ReactAudioPlayer 
+                        src={BitchinMixSolo}
                         controls/>
                     </div>
                         <button onClick={() => this.addToStudio('marshall plexi', MarshallAmp)}>Add to Studio</button>

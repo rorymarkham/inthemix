@@ -5,6 +5,21 @@ import ReactAudioPlayer from 'react-audio-player'
 //songs
 import PsychSurf from '../../Songs/PsychSurf.m4a'
 import Ender from '../../Songs/Enderfender.wav'
+import ACADoom from '../../Songs/ACADoom.wav'
+import NEPDoom from '../../Songs/NEPDoom.wav'
+import NEPRock from '../../Songs/NEPRock.wav'
+import NoUse from '../../Songs/NoUseDoom.wav'
+import ARORock from '../../Songs/ARORock.wav'
+import AROMix from '../../Songs/AROMix.wav'
+import RATRock from '../../Songs/RATRock.wav'
+import Sleeping from '../../Songs/SleepingDMix.wav'
+import PELDis from '../../Songs/PELDis.wav'
+import PELMix from '../../Songs/PELMix.wav'
+import PELBoth from '../../Songs/PELBoth.wav'
+import PELMixSolo from '../../Songs/PELMixSolo.wav'
+import BitchinSolo from '../../Songs/BitchinSolo.wav'
+import BitchinMixSolo from '../../Songs/BitchinMixSolo.wav'
+
 
 class Pedal extends Component {
     constructor(){
@@ -137,57 +152,69 @@ class Pedal extends Component {
                     {this.state.acapulcoMenu ? <div className='aca_card'>
                     <div className='eqd_logo'></div>
                     <div className='psych_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                        <h4>Doom</h4>
                         <ReactAudioPlayer 
-                        src={PsychSurf}
+                        src={ACADoom}
+                        controls/>
+                        <h4>Doom Mix</h4>
+                        <ReactAudioPlayer 
+                        src={NoUse}
                         controls/>
                     </div>
                     <div className='ender_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                    <h4>Doom N Roll</h4>
                         <ReactAudioPlayer 
-                        src={Ender}
+                        src={NEPRock}
+                        controls/>
+                        <h4>Doom N Roll Mix</h4>
+                        <ReactAudioPlayer 
+                        src={Sleeping}
                         controls/>
                     </div>
                     </div> : null}
                     {this.state.arrowsMenu ? <div className='aro_card'>
                     <div className='eqd_logo'></div>
                     <div className='psych_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                        <h4>Rocker</h4>
                         <ReactAudioPlayer 
-                        src={PsychSurf}
+                        src={ARORock}
+                        controls/>
+                        <h4>Rocker Mix</h4>
+                        <ReactAudioPlayer 
+                        src={AROMix}
                         controls/>
                     </div>
                     <div className='ender_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                    <h4>Solo</h4>
                         <ReactAudioPlayer 
-                        src={Ender}
+                        src={BitchinSolo}
+                        controls/>
+                        <h4>Solo Mix</h4>
+                        <ReactAudioPlayer 
+                        src={BitchinMixSolo}
                         controls/>
                     </div>
                     </div> : null}
                     {this.state.nepenthesMenu ? <div className='nep_card'>
                     <div className='electro_logo'></div>
                     <div className='psych_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                        <h4>Doom</h4>
                         <ReactAudioPlayer 
-                        src={PsychSurf}
+                        src={NEPDoom}
+                        controls/>
+                        <h4>Doom Mix</h4>
+                        <ReactAudioPlayer 
+                        src={NoUse}
                         controls/>
                     </div>
                     <div className='ender_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                    <h4>Doom N Roll</h4>
                         <ReactAudioPlayer 
-                        src={Ender}
+                        src={RATRock}
+                        controls/>
+                        <h4>Doom N Roll Mix</h4>
+                        <ReactAudioPlayer 
+                        src={Sleeping}
                         controls/>
                     </div>
                     </div> : null}
@@ -195,10 +222,12 @@ class Pedal extends Component {
                     <div className='proco_logo'></div>
                     <div className='psych_container'>
                         <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
+                        <ReactAudioPlayer 
+                        // src={RATRock}
+                        controls/>
                         <h4>In the mix</h4>
                         <ReactAudioPlayer 
-                        src={PsychSurf}
+                        // src={Sleeping}
                         controls/>
                     </div>
                     <div className='ender_container'>
@@ -220,11 +249,13 @@ class Pedal extends Component {
                     {this.state.dispatchMenu ? <div className='dis_card'>
                     <div className='eqd_logo'></div>
                     <div className='psych_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                    <h4>Clean</h4>
                         <ReactAudioPlayer 
-                        src={PsychSurf}
+                        src={PELDis}
+                        controls/>
+                        <h4>Clean Mix</h4>
+                        <ReactAudioPlayer 
+                        src={PELMix}
                         controls/>
                     </div>
                     <div className='ender_container'>
@@ -277,11 +308,13 @@ class Pedal extends Component {
                     {this.state.pyramidMenu ? <div className='pyr_card'>
                     <div className='eqd_logo'></div>
                     <div className='psych_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                        <h4>Chimey Cleans</h4>
                         <ReactAudioPlayer 
-                        src={PsychSurf}
+                        src={PELBoth}
+                        controls/>
+                        <h4>Chimey Solo Mix</h4>
+                        <ReactAudioPlayer 
+                        src={PELMixSolo}
                         controls/>
                     </div>
                     <div className='ender_container'>
