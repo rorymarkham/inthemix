@@ -150,7 +150,13 @@ class Pedal extends Component {
                     <div className='rat' onClick={this.showRat}></div>        
                  </div>
                     {this.state.acapulcoMenu ? <div className='aca_card'>
-                    <div className='eqd_logo'></div>
+                    <div className="amp-text">
+                    <div className='eqd_logo'>
+                    <div className='aca_big'></div>
+                    </div>
+                    <h1>Acapulco Gold</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <div className='aca_doom'></div>
                     <div className='psych_container'>
                         <h4>Doom</h4>
                         <ReactAudioPlayer 
@@ -161,6 +167,8 @@ class Pedal extends Component {
                         src={NoUse}
                         controls/>
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <div className='aca_rock'></div>
                     <div className='ender_container'>
                     <h4>Doom N Roll</h4>
                         <ReactAudioPlayer 
@@ -171,9 +179,16 @@ class Pedal extends Component {
                         src={Sleeping}
                         controls/>
                     </div>
+                    </div>
                     </div> : null}
                     {this.state.arrowsMenu ? <div className='aro_card'>
-                    <div className='eqd_logo'></div>
+                    <div className="amp-text">
+                    <div className='eqd_logo'>
+                    <div className='aro_big'></div>
+                    </div>
+                    <h1>Arrows</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <div className='aro_rock'></div>
                     <div className='psych_container'>
                         <h4>Rocker</h4>
                         <ReactAudioPlayer 
@@ -184,6 +199,8 @@ class Pedal extends Component {
                         src={AROMix}
                         controls/>
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <div className='aro_solo'></div>
                     <div className='ender_container'>
                     <h4>Solo</h4>
                         <ReactAudioPlayer 
@@ -194,9 +211,16 @@ class Pedal extends Component {
                         src={BitchinMixSolo}
                         controls/>
                     </div>
+                    </div>
                     </div> : null}
                     {this.state.nepenthesMenu ? <div className='nep_card'>
-                    <div className='electro_logo'></div>
+                    <div className="amp-text">
+                    <div className='electro_logo'>
+                    <div className='nep_big'></div>
+                    </div>
+                    <h1>Nepenthes</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <div className='nep_doom'></div>
                     <div className='psych_container'>
                         <h4>Doom</h4>
                         <ReactAudioPlayer 
@@ -207,6 +231,8 @@ class Pedal extends Component {
                         src={NoUse}
                         controls/>
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <div className='nep_rock'></div>
                     <div className='ender_container'>
                     <h4>Doom N Roll</h4>
                         <ReactAudioPlayer 
@@ -216,6 +242,7 @@ class Pedal extends Component {
                         <ReactAudioPlayer 
                         src={Sleeping}
                         controls/>
+                    </div>
                     </div>
                     </div> : null}
                     {this.state.ratMenu ? <div className='rat_card'>
@@ -247,7 +274,13 @@ class Pedal extends Component {
                     <div className='pyramid' onClick={this.showPyramid}></div>        
                  </div>
                     {this.state.dispatchMenu ? <div className='dis_card'>
-                    <div className='eqd_logo'></div>
+                    <div className="amp-text">
+                    <div className='eqd_logo'>
+                    <div className='dis_big'></div>
+                    </div>
+                    <h1>Dispatch Master</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <div className='dis_clean'></div>
                     <div className='psych_container'>
                     <h4>Clean</h4>
                         <ReactAudioPlayer 
@@ -258,6 +291,7 @@ class Pedal extends Component {
                         src={PELMix}
                         controls/>
                     </div>
+                    <div className='dis_verb'></div>
                     <div className='ender_container'>
                         <h4>Iso Track</h4>
                         <ReactAudioPlayer controls/>
@@ -265,6 +299,7 @@ class Pedal extends Component {
                         <ReactAudioPlayer 
                         src={Ender}
                         controls/>
+                    </div>
                     </div>
                     </div> : null}
                     {this.state.superMenu ? <div className='sup_card'>
@@ -306,7 +341,13 @@ class Pedal extends Component {
                     </div>
                     </div> : null}
                     {this.state.pyramidMenu ? <div className='pyr_card'>
-                    <div className='eqd_logo'></div>
+                    <div className="amp-text">
+                    <div className='eqd_logo'>
+                    <div className='pyr_big'></div>
+                    </div>
+                    <h1>Pyramids</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <div className='pyr_chime'></div>
                     <div className='psych_container'>
                         <h4>Chimey Cleans</h4>
                         <ReactAudioPlayer 
@@ -317,6 +358,8 @@ class Pedal extends Component {
                         src={PELMixSolo}
                         controls/>
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <div className='pyr_echo'></div>
                     <div className='ender_container'>
                         <h4>Iso Track</h4>
                         <ReactAudioPlayer controls/>
@@ -324,6 +367,7 @@ class Pedal extends Component {
                         <ReactAudioPlayer 
                         src={Ender}
                         controls/>
+                    </div>
                     </div>
                     </div> : null}
             </div>

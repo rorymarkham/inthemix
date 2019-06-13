@@ -63,10 +63,37 @@
 
 .eqd_logo{
     background-image: url('../../Assets/EQDLogo.png');
+    height: 200px;
+    width: 365px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.aca_big {
+    background-image: url('../../Assets/AcapulcoGold.png');
     height: 100%;
-    width: 310px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 150%
+}
+
+.aca_doom{
+    background-image: url('../../Assets/ACADoooom.png');
+    height: 150px;
+    width: 335px;
     background-size: contain;
     background-repeat: no-repeat; 
+    margin-left: 44%
+}
+
+.aca_rock{
+    background-image: url('../../Assets/ACADoomRoll.png');
+    height: 150px;
+    width: 335px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    margin-left: 44%
 }
 
 .arrows {
@@ -112,12 +139,31 @@
     box-shadow: 5px 5px 5px ; 
 }
 
-.eqd_logo{
-    background-image: url('../../Assets/EQDLogo.png');
+.aro_big {
+    background-image: url('../../Assets/Arrows.png');
     height: 100%;
-    width: 310px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 150%
+}
+
+.aro_rock{
+    background-image: url('../../Assets/ARORocker.png');
+    height: 150px;
+    width: 335px;
     background-size: contain;
     background-repeat: no-repeat; 
+    margin-left: 44%
+}
+
+.aro_solo{
+    background-image: url('../../Assets/AROSolo.png');
+    height: 150px;
+    width: 335px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    margin-left: 44%
 }
 
 .nepenthes{
@@ -164,10 +210,37 @@
 
 .electro_logo{
     background-image: url('../../Assets/ElectroLoog.png');
-    height: 100%;
-    width: 310px;
+    height: 200px;
+    width: 365px;
     background-size: contain;
     background-repeat: no-repeat; 
+}
+
+.nep_big {
+    background-image: url('../../Assets/Nepenthes.png');
+    height: 100%;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 150%;
+}
+
+.nep_rock{
+    background-image: url('../../Assets/NEPRock.png');
+    height: 150px;
+    width: 335px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    margin-left: 43%
+}
+
+.nep_doom{
+    background-image: url('../../Assets/NEPDoom.png');
+    height: 150px;
+    width: 335px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    margin-left: 43%
 }
 
 .rat {
@@ -267,12 +340,31 @@
     box-shadow: 5px 5px 5px ; 
 }
 
-.eqd_logo{
-    background-image: url('../../Assets/EQDLogo.png');
+.dis_big {
+    background-image: url('../../Assets/DispatchMaster.png');
     height: 100%;
-    width: 310px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 150%;
+}
+
+.dis_clean{
+    background-image: url('../../Assets/DISClean.png');
+    height: 150px;
+    width: 335px;
     background-size: contain;
     background-repeat: no-repeat; 
+    margin-left: 44%
+}
+
+.dis_verb{
+    background-image: url('../../Assets/DISVerb.png');
+    height: 150px;
+    width: 335px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    margin-left: 44%
 }
 
 .supermoon {
@@ -368,12 +460,31 @@
     box-shadow: 5px 5px 5px ; 
 }
 
-.eqd_logo{
-    background-image: url('../../Assets/EQDLogo.png');
+.pyr_big {
+    background-image: url('../../Assets/Pyramids.png');
     height: 100%;
-    width: 310px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 150%;
+}
+
+.pyr_chime{
+    background-image: url('../../Assets/PYRChime.png');
+    height: 150px;
+    width: 335px;
     background-size: contain;
     background-repeat: no-repeat; 
+    margin-left: 43%
+}
+
+.pyr_echo{
+    background-image: url('../../Assets/PYREcho.png');
+    height: 150px;
+    width: 335px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    margin-left: 43%
 }
 
 .phase {

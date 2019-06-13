@@ -102,6 +102,7 @@ class Amplifier extends Component {
                     <div className='orange_logo'>
                     <div className='ora_big'></div>
                     </div>
+                    <h1>Orange Rockerverb MKIII</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
                     <div className='ora_dirt'></div>
                     <div className='ora_dirt_container'>
@@ -132,12 +133,14 @@ class Amplifier extends Component {
 
                 {this.state.fenderMenu ? <div className='fen_card'>
                     <div className="amp-text">
-                    <div className='fender_logo'></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat. Sed vulputate nulla non dolor gravida eleifend. Aliquam congue, sem a pretium lobortis, ante lectus egestas dolor, et congue tellus nunc semper quam. In sagittis ut diam a fermentum. Vestibulum pharetra dolor eget nunc egestas, eu pharetra felis luctus. Nunc ut ligula vel justo pellentesque ultricies. Quisque accumsan varius odio a iaculis. Vestibulum congue augue dolor, vel dapibus sapien dapibus venenatis. Duis mauris nisi, porttitor congue nisi et, tempus varius ante. Fusce sit amet pretium elit.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat. Sed vulputate nulla non dolor gravida eleifend. Aliquam congue, sem a pretium lobortis, ante lectus egestas dolor, et congue tellus nunc semper quam. In sagittis ut diam a fermentum. Vestibulum pharetra dolor eget nunc egestas, eu pharetra felis luctus. Nunc ut ligula vel justo pellentesque ultricies. Quisque accumsan varius odio a iaculis. Vestibulum congue augue dolor, vel dapibus sapien dapibus venenatis. Duis mauris nisi, porttitor congue nisi et, tempus varius ante. Fusce sit amet pretium elit.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat. Sed vulputate nulla non dolor gravida eleifend. Aliquam congue, sem a pretium lobortis, ante lectus egestas dolor, et congue tellus nunc semper quam. In sagittis ut diam a fermentum. Vestibulum pharetra dolor eget nunc egestas, eu pharetra felis luctus. Nunc ut ligula vel justo pellentesque ultricies. Quisque accumsan varius odio a iaculis. Vestibulum congue augue dolor, vel dapibus sapien dapibus venenatis. Duis mauris nisi, porttitor congue nisi et, tempus varius ante. Fusce sit amet pretium elit.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat. Sed vulputate nulla non dolor gravida eleifend. Aliquam congue, sem a pretium lobortis, ante lectus egestas dolor, et congue tellus nunc semper quam. In sagittis ut diam a fermentum. Vestibulum pharetra dolor eget nunc egestas, eu pharetra felis luctus. Nunc ut ligula vel justo pellentesque ultricies. Quisque accumsan varius odio a iaculis. Vestibulum congue augue dolor, vel dapibus sapien dapibus venenatis. Duis mauris nisi, porttitor congue nisi et, tempus varius ante. Fusce sit amet pretium elit.</p>
+                    <div className='fender_logo'>
+                    <div className='fen_big'>
                     </div>
+                    <button className='fen_add_button' onClick={() => this.addToStudio('fender bassman', FenderAmp)}>Add to Studio</button>
+                    </div>
+                    <h1>Fender Super Bassman</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat. Sed vulputate nulla non dolor gravida eleifend. Aliquam congue, sem a pretium lobortis, ante lectus egestas dolor, et congue tellus nunc semper quam. In sagittis ut diam a fermentum. </p>
+                    <div className='fen_jazz'></div>
                     <div className='psych_container'>
                         <h4>Jazzy</h4>
                         <ReactAudioPlayer 
@@ -148,6 +151,8 @@ class Amplifier extends Component {
                         src={JazzyMix}
                         controls/>
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat. Sed vulputate nulla non dolor gravida eleifend. Aliquam congue, sem a pretium lobortis.</p>
+                    <div className='fen_jazz'></div>
                     <div className='ender_container'>
                         <h4>Iso Track</h4>
                         <ReactAudioPlayer controls/>
@@ -156,15 +161,18 @@ class Amplifier extends Component {
                         src={Ender}
                         controls/>
                     </div>
+                        </div>
                     
-                        <button onClick={() => this.addToStudio('fender bassman', FenderAmp)}>Add to Studio</button>
+                        
                 </div> : null}
 
                 {this.state.hiwattMenu ? <div className='hi_card'>
                     <div className="amp-text">
                     <div className='hiwatt_logo'>
-                    <div className='sol_big'></div>
+                    <div className='sol_big'>
+                    <button className='sol_add_button' onClick={() => this.addToStudio('soldano SLO 100', SoldanoAmp)}>Add to Studio</button></div>
                     </div>
+                    <h1>Soldano SLO 100</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
                     <div className='sold_crunch'></div>
                     <div className='psych_container'>
@@ -190,10 +198,16 @@ class Amplifier extends Component {
                         controls/>
                     </div>
                     </div>
-                        <button onClick={() => this.addToStudio('soldano SLO 100', SoldanoAmp)}>Add to Studio</button>
+                        {/* <button className='add_button' onClick={() => this.addToStudio('soldano SLO 100', SoldanoAmp)}>Add to Studio</button> */}
                 </div> : null}
                 {this.state.marshallMenu ? <div className='mar_card'>
-                    <div className='marshall_logo'></div>
+                <div className="amp-text">
+                    <div className='marshall_logo'>
+                    <div className='mar_big'></div>
+                    </div>
+                    <h1>Marshall Plexi 100</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <div className='mar_solo'></div>
                     <div className='psych_container'>
                         <h4>Iso Track</h4>
                         <ReactAudioPlayer 
@@ -204,6 +218,8 @@ class Amplifier extends Component {
                         src={PsychSurf}
                         controls/>
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <div className='mar_solo'></div>
                     <div className='ender_container'>
                         <h4>Solo</h4>
                         <ReactAudioPlayer 
@@ -213,6 +229,7 @@ class Amplifier extends Component {
                         <ReactAudioPlayer 
                         src={BitchinMixSolo}
                         controls/>
+                    </div>
                     </div>
                         <button onClick={() => this.addToStudio('marshall plexi', MarshallAmp)}>Add to Studio</button>
                 </div> : null}

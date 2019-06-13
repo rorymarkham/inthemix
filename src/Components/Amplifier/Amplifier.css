@@ -51,7 +51,7 @@
 }
 
 .ora_card:hover{
-    height: 90%;
+    height: 80%;
     width: 90%;
     -webkit-animation-name: pulse;
         animation-name: pulse;
@@ -70,7 +70,7 @@
     background-repeat: no-repeat; 
 }
 
-.ora_big{
+.ora_big {
     background-image: url('../../Assets/Orange.png');
     height: 100%;
     width: 400px;
@@ -82,14 +82,14 @@
 .ora_dirt{
     background-image: url('../../Assets/OraDirt.png');
     height: 100px;
-    width: 235px;
+    width: 535px;
     background-size: contain;
     background-repeat: no-repeat; 
-    margin-left: 35%
+    margin-left: 18%
 }
 
 .ora_clean{
-    background-image: url('../../Assets/OraDirt.png');
+    background-image: url('../../Assets/ORAClean.png');
     height: 100px;
     width: 235px;
     background-size: contain;
@@ -133,22 +133,22 @@
         animation-duration: 1s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both; 
+        box-shadow: 5px 5px 5px ;  
 }
 
 .fen_card {
     height: 80%;
     width: 80%;
     background: #fff;
-    border: 3px solid #232232;
+    border: 2px solid #232232;
     margin: 3em;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    justify-content: space-between
 }
 
 .fen_card:hover{
-    height: 90%;
+    height: 80%;
     width: 90%;
     -webkit-animation-name: pulse;
         animation-name: pulse;
@@ -161,11 +161,28 @@
 
 .fender_logo{
     background-image: url('../../Assets/LogoFender.png');
-    height: 40%;
+    height: 200px;
     width: 235px;
     background-size: contain;
     background-repeat: no-repeat; 
-    margin: 3px;
+}
+
+.fen_big {
+    background-image: url('../../Assets/Fender.png');
+    height: 100%;
+    width: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 150%
+}
+
+.fen_jazz{
+    background-image: url('../../Assets/FenJazz.png');
+    height: 100px;
+    width: 335px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    margin-left: 30%
 }
 
 .amp-text {
@@ -238,7 +255,7 @@
 }
 
 .hi_card:hover{
-    height: 90%;
+    height: 80%;
     width: 90%;
     -webkit-animation-name: pulse;
         animation-name: pulse;
@@ -305,7 +322,7 @@
 }
 
 .mar_card:hover{
-    height: 90%;
+    height: 80%;
     width: 90%;
     -webkit-animation-name: pulse;
         animation-name: pulse;
@@ -318,11 +335,75 @@
 
 .marshall_logo{
     background-image: url('../../Assets/LogoMarshall.png');
-    height: 100%;
+    height: 200px;
     width: 235px;
     background-size: contain;
     background-repeat: no-repeat; 
 }
+
+.mar_big {
+    background-image: url('../../Assets/Marshall.png');
+    height: 100%;
+    width: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 150%
+}
+
+.mar_solo{
+    background-image: url('../../Assets/MarSolo.png');
+    height: 100px;
+    width: 335px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    margin-left: 30%
+}
+
+.sol_add_button {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 0.5rem 0;
+    margin: 0.5rem 1rem;
+    width: 11rem;
+    background: transparent;
+    color: black;
+    border: 2px solid pink;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 11em
+}
+
+.sol_add_button:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    height: 39px;
+    box-shadow: 5px 5px 5px ;   
+}
+
+.fen_add_button {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 0.5rem 0;
+    margin: 0.5rem 1rem;
+    width: 11rem;
+    background: transparent;
+    color: black;
+    border: 2px solid pink;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* margin-top: 12em */
+}
+
+.fen_add_button:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    height: 39px;
+    box-shadow: 5px 5px 5px ;   
+    }
 
 
     @-webkit-keyframes pulse {
