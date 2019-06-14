@@ -4,6 +4,7 @@ import './Amplifier.css'
 import { connect } from 'react-redux';
 import {withRouter} from 'react-router-dom';
 import ReactAudioPlayer from 'react-audio-player'
+import {updateProduct} from '../redux/userReducer'
 
 // images
 import OrangeAmp from '../../Assets/Orange.png';
@@ -77,18 +78,24 @@ class Amplifier extends Component {
         })
     }
 
-    addToStudio = (ampName, ampImage) => {
+    addToStudio = async (ampName, ampImage) => {
+        console.log('htot')
         const body = {
             ampImage,
             ampName
         };
-        axios.post(`/api/studio/${this.props.id}`, body)
+        await axios.post(`/api/studio/${this.props.id}`, body)
             .then(res => {
-                this.props.history.push('/studio')
+                console.log(res.data)
+                axios.get('/auth/studio').then((res) => {
+                    console.log(res.data.studio)
+                    this.props.updateProduct({studio: res.data.studio})
+                })
             })
     }
 
     render() {
+        console.log(this.props)
         return (
             <div className='amp_dropdown'>
                 <div className='amp_card' >
@@ -240,4 +247,4 @@ class Amplifier extends Component {
 
 const mapStateToProps = state => state;
 
-export default withRouter(connect(mapStateToProps)(Amplifier));
+export default withRouter(connect(mapStateToProps, {updateProduct})(Amplifier));

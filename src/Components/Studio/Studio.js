@@ -1,28 +1,23 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import {connect} from 'react-redux'
-import {updateUser, clearUser} from '../redux/userReducer'
+import {updateUser, clearUser, updateProduct, removeProduct} from '../redux/userReducer'
 import {Link} from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 
 class Studio extends Component {
-    constructor(){
-        super()
-
-        this.state = {
-            products: []
-        }
-    }
     componentDidMount(){
         axios.get('/auth/studio').then((res) => {
-            this.props.updateUser(res.data)
-            this.setState({
-                products: res.data.studio
-            });
+            console.log(res.data.studio)
+            this.props.updateProduct({studio: res.data.studio})
         }).catch((err) => {
             this.props.history.push('/login')
         })
     }
+
+    // removeItem = () => {
+    //     axios.
+    // }
 
     handleUserLogout = () => {
         axios.get('/auth/logout').then((res) => {
@@ -32,19 +27,19 @@ class Studio extends Component {
     }
 
     render() {
-
-        const mappedProducts = this.state.products.map(product => {
+            console.log(this.props)
+        const mappedProducts = this.props.studio.map(product => {
             return (
                 <div>
                     <div className='product_container'>
                         <h4>{product.product_name}</h4>
                         <img src={product.product_img} height="100%" width="235" alt="products yo"/>
+                        <button onClick={() => this.removeItem}>Remove From Studio</button>
                     </div>
                 </div>
             )
         })
 
-        console.log(this.state.products)
         return (
             <div>
                 <h1>Studio</h1>
@@ -63,7 +58,9 @@ function mapStateToProps(reduxState){
 
 const mapDispatchToProps = {
     updateUser,
-    clearUser
+    clearUser,
+    updateProduct, 
+    removeProduct
 }
 
 export default connect(

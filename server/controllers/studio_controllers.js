@@ -1,18 +1,20 @@
 module.exports = {
-    addAmp: (req, res) => {
+    addAmp: async (req, res) => {
+
+        console.log(req.params)
         const db = req.app.get('db')
         const {ampImage, ampName} = req.body;
         const {id} = req.params;
-        db.add_amp({user_id: id, product_name: ampName, product_img: ampImage})
-        .then(() => {
-            return db.get_user_studio({id});
-        })
+        await db.add_amp({user_id: +id, product_name: ampName, product_img: ampImage})
         .then((updatedStudio) => {
-            res.status(200).send(updatedStudio[0])
+            res.sendStatus(200)
         })     
     },
 
-    // deleteAmp: (req, res) => {
-    //     const 
-    // }
+    deleteAmp: (req, res) => {
+        const db = req.app.delete('db')
+        const {ampImage, ampName} = req.body
+        const {id} = req.params
+        req.body = req.body.filter()
+    }
 }

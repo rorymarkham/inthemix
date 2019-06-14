@@ -1,6 +1,17 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 import './Pedal.css'
+import { connect } from 'react-redux';
+import {withRouter} from 'react-router-dom';
 import ReactAudioPlayer from 'react-audio-player'
+import {updateProduct} from '../redux/userReducer'
+
+//images
+import AcaPedal from '../../Assets/AcapulcoGold.png'
+import AroPedal from '../../Assets/Arrows.png'
+import NepPedal from '../../Assets/Nepenthes.png'
+import DisPedal from '../../Assets/DispatchMaster.png'
+import PyramidPedal from '../../Assets/Pyramids.png'
 
 //songs
 import PsychSurf from '../../Songs/PsychSurf.m4a'
@@ -140,6 +151,22 @@ class Pedal extends Component {
         })
     }
 
+    addToStudio = async (ampName, ampImage) => {
+        console.log('htot')
+        const body = {
+            ampImage,
+            ampName
+        };
+        await axios.post(`/api/studio/${this.props.id}`, body)
+            .then(res => {
+                console.log(res.data)
+                axios.get('/auth/studio').then((res) => {
+                    console.log(res.data.studio)
+                    this.props.updateProduct({studio: res.data.studio})
+                })
+            })
+    }
+
     render() {
         return (
             <div className='pedal_dropdown'>  
@@ -152,7 +179,9 @@ class Pedal extends Component {
                     {this.state.acapulcoMenu ? <div className='aca_card'>
                     <div className="amp-text">
                     <div className='eqd_logo'>
-                    <div className='aca_big'></div>
+                    <div className='aca_big'>
+                    <button onClick={() => this.addToStudio('Acapulco Gold', AcaPedal)}>Add to Studio</button>
+                    </div>
                     </div>
                     <h1>Acapulco Gold</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
@@ -184,7 +213,9 @@ class Pedal extends Component {
                     {this.state.arrowsMenu ? <div className='aro_card'>
                     <div className="amp-text">
                     <div className='eqd_logo'>
-                    <div className='aro_big'></div>
+                    <div className='aro_big'>
+                    <button onClick={() => this.addToStudio('Arrows', AroPedal)}>Add to Studio</button>
+                    </div>
                     </div>
                     <h1>Arrows</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
@@ -216,7 +247,9 @@ class Pedal extends Component {
                     {this.state.nepenthesMenu ? <div className='nep_card'>
                     <div className="amp-text">
                     <div className='electro_logo'>
-                    <div className='nep_big'></div>
+                    <div className='nep_big'>
+                    <button onClick={() => this.addToStudio('Nepenthes', NepPedal)}>Add to Studio</button>
+                    </div>
                     </div>
                     <h1>Nepenthes</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
@@ -276,7 +309,9 @@ class Pedal extends Component {
                     {this.state.dispatchMenu ? <div className='dis_card'>
                     <div className="amp-text">
                     <div className='eqd_logo'>
-                    <div className='dis_big'></div>
+                    <div className='dis_big'>
+                    <button onClick={() => this.addToStudio('Dispatch Master', DisPedal)}>Add to Studio</button>
+                    </div>
                     </div>
                     <h1>Dispatch Master</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
@@ -343,7 +378,9 @@ class Pedal extends Component {
                     {this.state.pyramidMenu ? <div className='pyr_card'>
                     <div className="amp-text">
                     <div className='eqd_logo'>
-                    <div className='pyr_big'></div>
+                    <div className='pyr_big'>
+                    <button onClick={() => this.addToStudio('pyramid', PyramidPedal)}>Add to Studio</button>
+                    </div>
                     </div>
                     <h1>Pyramids</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
@@ -375,4 +412,6 @@ class Pedal extends Component {
     }
 }
 
-export default Pedal
+const mapStateToProps = state => state;
+
+export default withRouter(connect(mapStateToProps, {updateProduct})(Pedal));
