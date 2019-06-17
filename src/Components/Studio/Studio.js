@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import {connect} from 'react-redux'
-import {updateUser, clearUser, updateProduct, removeProduct} from '../redux/userReducer'
+import {updateUser, clearUser, updateProduct, getProduct} from '../redux/userReducer'
 import {Link} from 'react-router-dom'
-import Navbar from '../Navbar/Navbar'
+import Home from '../Home/Home'
 
 class Studio extends Component {
     componentDidMount(){
@@ -13,11 +13,16 @@ class Studio extends Component {
         }).catch((err) => {
             this.props.history.push('/login')
         })
+        this.props.getProduct()
     }
 
-    // removeItem = () => {
-    //     axios.
-    // }
+
+
+    removeItem = (studio_id) => {
+        axios.delete(`/api/studio/${studio_id}`).then((res) => {
+            this.props.getProduct()
+        })
+    }
 
     handleUserLogout = () => {
         axios.get('/auth/logout').then((res) => {
@@ -27,14 +32,14 @@ class Studio extends Component {
     }
 
     render() {
-            console.log(this.props)
-        const mappedProducts = this.props.studio.map(product => {
+            console.log(this.props.studio)
+        const mappedProducts = this.props.studio.map((product, i)=> {
             return (
-                <div>
+                <div key={i} >
                     <div className='product_container'>
                         <h4>{product.product_name}</h4>
                         <img src={product.product_img} height="100%" width="235" alt="products yo"/>
-                        <button onClick={() => this.removeItem}>Remove From Studio</button>
+                        <button onClick={() => this.removeItem(product.studio_id)}>Remove From Studio</button>
                     </div>
                 </div>
             )
@@ -42,10 +47,11 @@ class Studio extends Component {
 
         return (
             <div>
-                <h1>Studio</h1>
-                <Navbar/>
-                <button onClick={this.handleUserLogout}>Logout</button>
+                <Home/>
                 {mappedProducts}
+                <div>
+                <button onClick={this.handleUserLogout}>Logout</button>
+                </div>
                 
             </div>
         )
@@ -60,7 +66,7 @@ const mapDispatchToProps = {
     updateUser,
     clearUser,
     updateProduct, 
-    removeProduct
+    getProduct
 }
 
 export default connect(

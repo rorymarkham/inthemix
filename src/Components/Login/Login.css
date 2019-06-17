@@ -1,3 +1,4 @@
+
 .login_fields {
     display: flex;
    flex-direction: column;
@@ -6,5 +7,58 @@
 .register_fields {
     display: flex;
    flex-direction: column;
+}
+
+
+.login_container {
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 0.5rem 0;
+    margin: 0.5rem 1rem;
+    width: 13rem;
+    background: white;
+    color: black;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.log_btn {
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 0.3rem 0;
+    margin: auto;
+    width: 10rem;
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.log_btn:hover{
+    background: black;
+    color: white
+}
+
+.register_container{
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 0.3rem 0;
+    margin: 0.7rem 1rem;
+    width: 10rem;
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.register_container:hover{
+    background: black;
+    color: white
 }
 

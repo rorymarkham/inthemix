@@ -1,3 +1,4 @@
+import axios from 'axios'
 
 const initialState = {
     firstname: '',
@@ -11,13 +12,21 @@ const UPDATE_USER = 'UPDATE_USER'
 const CLEAR_USER = 'CLEAR_USER'
 const LOGIN_USER = 'LOGIN_USER'
 const UPDATE_PRODUCT = 'UPDATE_PROCUCT'
-const REMOVE_PRODUCT = 'REMOVE_PRODUCT'
+const GET_PRODUCT = 'GET_PRODUCT'
 
 export function login(user){
     console.log(user)
     return {
         type: LOGIN_USER,
         payload: user
+    }
+}
+
+export function getProduct(){
+    const getAmp = axios.get('/auth/studio').then(res => res.data.studio)
+    return {
+        type: GET_PRODUCT,
+        payload: getAmp
     }
 }
 
@@ -41,12 +50,6 @@ export function updateProduct(studio){
     }
 }
 
-export function deleteProduct(id){
-    return {
-        type: REMOVE_PRODUCT,
-        payload: id
-    }
-}
 
 function reducer(state = initialState, action){
     switch(action.type){
@@ -64,10 +67,11 @@ function reducer(state = initialState, action){
         console.log(action.payload)
         const {studio} = action.payload
         return {...state, studio}
-
-        case REMOVE_PRODUCT:
-        return state.filter(({ id }) => id !== action.data)
         
+        case GET_PRODUCT + '_FULFILLED':
+        console.log(action.payload)
+        return {...state, studio: action.payload}
+
         default:
         return state
     }

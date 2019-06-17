@@ -38,18 +38,19 @@ class Login extends Component {
     render() {
         return (
             <div className='login_container'>
+                <div>
                     <div>
-                    <button className='log_btn' 
-                    onClick={this.showLogin}>Login</button>
-                
-                    
-                <button className='register_container' 
-                   onClick={this.showRegMenu}>Sign Up</button>
+                        <button className='log_btn' 
+                        onClick={this.showLogin}>Login</button>
                     </div>
-                   {this.state.menu ? <LoginForm/> 
-                   : null}
-                   {this.state.regMenu ?  <RegisterForm/>
-                   : null}
+                        
+                    <button className='register_container' 
+                    onClick={this.showRegMenu}>Register</button>
+                    {this.state.menu ? <LoginForm/> 
+                    : null}
+                    {this.state.regMenu ?  <RegisterForm/>
+                    : null}
+                </div>
 
             </div>
         )
