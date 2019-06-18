@@ -1,0 +1,1 @@
+update users set firstname = ${firstname} where user_id = ${user_id};

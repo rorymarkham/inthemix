@@ -61,3 +61,12 @@
     cursor: pointer
 }
 
+.welcome {
+    color: black;
+    background: white;
+    height: 80px;
+    width: 400px;
+    margin: auto;
+    border: 2px solid black;
+}
+

@@ -65,5 +65,12 @@ module.exports = {
     logout: (req, res) => {
         req.session.destroy()
         res.sendStatus(200)
+    },
+    updateName: async (req, res) => {
+        const db = req.app.get('db')
+        const {firstname} = req.body
+        const {user} = req.session
+        await db.update_user_first({firstname, user_id: user.id})
+        res.status(200).send('Updated name!')
     }
 }

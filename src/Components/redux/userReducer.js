@@ -13,6 +13,7 @@ const CLEAR_USER = 'CLEAR_USER'
 const LOGIN_USER = 'LOGIN_USER'
 const UPDATE_PRODUCT = 'UPDATE_PROCUCT'
 const GET_PRODUCT = 'GET_PRODUCT'
+const EDIT_USER='EDIT_USER'
 
 export function login(user){
     console.log(user)
@@ -50,9 +51,20 @@ export function updateProduct(studio){
     }
 }
 
+export function editUser(firstname) {
+    return {
+        type: EDIT_USER,
+        payload: firstname
+    }
+}
 
 function reducer(state = initialState, action){
     switch(action.type){
+        case EDIT_USER:
+            return {
+                ...state,
+                firstname: action.payload
+            }
         case LOGIN_USER:
         return {...state, ...action.payload};
 

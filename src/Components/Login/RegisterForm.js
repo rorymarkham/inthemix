@@ -9,21 +9,23 @@ class RegisterForm extends Component {
             firstname: '',
             lastname: '',
             username: '',
+            email: '', //
             password: '',
         }
     }
 
     handleUserRegister = (e) => {
         e.preventDefault()
-        const {firstname, lastname, email, password} = this.state
-        axios.post('/auth/register', {firstname, lastname, email, password})
+        const {firstname, lastname, username, email, password} = this.state //
+        axios.post('/auth/register', {firstname, lastname, username, email, password}) //
         .then((res) => {
             this.props.history.push('/home')
         }).catch((err) => {
             console.log(err)
         })
         e.target.firstname.value = ''
-		e.target.lastname.value = ''
+        e.target.lastname.value = ''
+        e.target.username.value = ''  //
 		e.target.email.value = ''
 		e.target.password.value = ''
     }
@@ -49,6 +51,12 @@ class RegisterForm extends Component {
                     type='text' 
                     placeholder='last name' 
                     name='lastname' 
+                    onChange={this.handleLoginInfoUpdate}
+                    />
+                    <input 
+                    type='text' 
+                    placeholder='username' 
+                    name='username' 
                     onChange={this.handleLoginInfoUpdate}
                     />
                     <input 

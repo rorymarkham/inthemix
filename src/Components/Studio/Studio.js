@@ -1,12 +1,20 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import {connect} from 'react-redux'
-import {updateUser, clearUser, updateProduct, getProduct} from '../redux/userReducer'
+import {updateUser, clearUser, updateProduct, getProduct, editUser} from '../redux/userReducer'
 import {Link} from 'react-router-dom'
 import Home from '../Home/Home'
 import './Studio.css'
+import Login from '../Login/Login'
 
 class Studio extends Component {
+    constructor(){
+        super()
+        this.state = {
+            edit: false
+        }
+    }
+
     componentDidMount(){
         axios.get('/auth/studio').then((res) => {
             console.log(res.data.studio)
@@ -17,7 +25,17 @@ class Studio extends Component {
         this.props.getProduct()
     }
 
+    toggleEdit = () => {
+        let newEdit = !this.state.edit
+        this.setState({edit: newEdit})
+    }
 
+    saveChanges = () => {
+        axios.post('/auth/update', {firstname: this.props.firstname})
+        .then(res => {
+            this.toggleEdit()
+        })
+    }
 
     removeItem = (studio_id) => {
         axios.delete(`/api/studio/${studio_id}`).then((res) => {
@@ -33,7 +51,7 @@ class Studio extends Component {
     }
 
     render() {
-            console.log(this.props.studio)
+            console.log(this.props)
         const mappedProducts = this.props.studio.map((product, i)=> {
             return (
                 <div key={i} >
@@ -49,6 +67,17 @@ class Studio extends Component {
         return (
             <div>
                 <Home/>
+                {!this.state.edit?
+                <div className='welcome'>
+                    <h1>{this.props.firstname}'s Studio</h1>
+                    <button onClick={this.toggleEdit}>Edit</button>
+                </div>
+                :
+                <form onSubmit={e => e.preventDefault()}>
+                    <input type='text' value={this.props.firstname} onChange={e => this.props.editUser(e.target.value)} />
+                    <button onClick={this.saveChanges}>Save Changes</button>
+                </form>
+                }
                 {mappedProducts}
                 <div>
                 <button  className='logout_btn' onClick={this.handleUserLogout}>Logout</button>
@@ -66,7 +95,8 @@ const mapDispatchToProps = {
     updateUser,
     clearUser,
     updateProduct, 
-    getProduct
+    getProduct,
+    editUser
 }
 
 export default connect(

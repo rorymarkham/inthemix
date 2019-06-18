@@ -30,6 +30,7 @@ app.post('/auth/register', auth_ctrl.register)
 app.post('/auth/login', auth_ctrl.login)
 app.get('/auth/studio', auth_ctrl.getUserStudio)
 app.get('/auth/logout', auth_ctrl.logout)
+app.post('/auth/update', auth_ctrl.updateName)
 
 app.post('/api/studio/:id', studio_ctrl.addAmp)
 app.delete('/api/studio/:id', studio_ctrl.deleteAmp)

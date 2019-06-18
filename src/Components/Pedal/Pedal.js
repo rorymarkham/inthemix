@@ -477,7 +477,7 @@ class Pedal extends Component {
                     <button className='add_button' onClick={() => this.addToStudio('Dispatch Master', DisPedal)}>Add to Studio</button>
                     </div>
                     <h1>Dispatch Master</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <p>The Dispatch Master is a hi-fi digital Delay & Reverb Device that combines independent delay and reverb effects into one space-saving enclosure, so you can keep deep ambient echoes (or just a quick slapback) on speed-dial.</p>
                     <div className='dis_clean'>
                     <div className='aca_gear'><h5>GEAR USED:</h5>
                             <div className='ora_dirt_guitar'>
@@ -516,13 +516,44 @@ class Pedal extends Component {
                         src={PELMix}
                         controls/>
                     </div>
-                    <div className='dis_verb'></div>
+                    <p>The Dispatch Master is a hi-fi digital Delay & Reverb Device that combines independent delay and reverb effects into one space-saving enclosure, so you can keep deep ambient echoes (or just a quick slapback) on speed-dial.</p>
+                    <div className='dis_verb'>
+                    <div className='aca_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">PureSalem Bruiser</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">EQD Arrows</a>
+                                        <a href="#">Cry Baby Mini Wah</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Mapex</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='ender_container'>
-                        <h4>Iso Track</h4>
-                        <ReactAudioPlayer controls/>
-                        <h4>In the mix</h4>
+                    <h4>Solo</h4>
                         <ReactAudioPlayer 
-                        src={Ender}
+                        src={BitchinSolo}
+                        controls/>
+                        <h4>Solo Mix</h4>
+                        <ReactAudioPlayer 
+                        src={BitchinMixSolo}
                         controls/>
                     </div>
                     </div>
