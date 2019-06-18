@@ -22,6 +22,50 @@
     
 }
 
+.img1{
+    background-image: url('../../Assets/Amp.png');
+    height: 100%;
+    width: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1em
+}
+
+.img2{
+    background-image: url('../../Assets/Guitar.png');
+    height: 100%;
+    width: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1em
+}
+
+.img3{
+    background-image: url('../../Assets/Pedal.png');
+    height: 100%;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1em
+}
+
+.img4{
+    background-image: url('../../Assets/Drum.png');
+    height: 100%;
+    width: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1em
+}
+
+.img5{
+    background-image: url('../../Assets/Studio.png');
+    height: 100%;
+    width: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1em
+}
 
 
 

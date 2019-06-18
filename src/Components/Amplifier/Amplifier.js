@@ -35,6 +35,7 @@ class Amplifier extends Component {
     constructor() {
         super()
         this.state = {
+            main: false,
             orangeMenu: false,
             fenderMenu: false,
             hiwattMenu: false,
@@ -42,17 +43,29 @@ class Amplifier extends Component {
         }
     }
 
+    showMain = () => {
+        this.setState({
+            main: !this.state.main,
+            orangeMenu: false,
+            fenderMenu: false,
+            hiwattMenu: false,
+            marshallMenu: false,
+        })
+    }
+
     showOrange = () => {
         this.setState({
+            main: false,
             orangeMenu: !this.state.orangeMenu,
             fenderMenu: false,
             hiwattMenu: false,
-            marshallMenu: false
+            marshallMenu: false,
         })
     }
 
     showFender = () => {
         this.setState({
+            main: false,
             fenderMenu: !this.state.fenderMenu,
             hiwattMenu: false,
             marshallMenu: false,
@@ -62,19 +75,21 @@ class Amplifier extends Component {
 
     showHiwatt = () => {
         this.setState({
+            main: false,
             hiwattMenu: !this.state.hiwattMenu,
             marshallMenu: false,
             orangeMenu: false,
-            fenderMenu: false
+            fenderMenu: false,
         })
     }
 
     showMarshall = () => {
         this.setState({
+            main: false,
             marshallMenu: !this.state.marshallMenu,
             orangeMenu: false,
             fenderMenu: false,
-            hiwattMenu: false
+            hiwattMenu: false,
         })
     }
 
@@ -104,14 +119,46 @@ class Amplifier extends Component {
                     <div className='hiwatt' onClick={this.showHiwatt}></div>
                     <div className='marshall_plexi' onClick={this.showMarshall}></div>
                 </div>
+                    <div className='main' onClick={this.main}>
+                    {/* <h1>Pick an Amp to listen too</h1> */}
+                    </div>
+                    {/* {this.state.menu ? <h1>Pick an Amp</h1>: null} */}
                 {this.state.orangeMenu ? <div className='ora_card'>
                     <div className="amp-text">
                     <div className='orange_logo'>
                     <div className='ora_big'></div>
+                    <button className='ora_add_button' onClick={() => this.addToStudio('Orange Rockerverb', OrangeAmp)}>Add to Studio</button>
                     </div>
                     <h1>Orange Rockerverb MKIII</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
-                    <div className='ora_dirt'></div>
+                    <p>TWIN CHANNEL CLASS A/B GUITAR AMP HEAD, FOOTSWITCHABLE VALVE DRIVEN REVERB, VALVE BUFFERED EFFECTS LOOP, FOOTSWITCHABLE ATTENUATOR & SELECTABLE OUTPUT WATTAGE.</p>
+                    <div className='ora_dirt'>
+                        <div className='ora_dirt_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">Gibson Les Paul Traditional</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">None</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Ludwig</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='ora_dirt_container'>
                         <h4>Bitchin</h4>
                         <ReactAudioPlayer 
@@ -122,8 +169,35 @@ class Amplifier extends Component {
                         src={BitchinMix}
                         controls/>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat. Sed vulputate nulla non dolor gravida eleifend. Aliquam congue, sem a pretium </p>
-                    <div className='ora_clean'></div>
+                    <p>The Clean Channel delivers a super rich clean tone with beautiful harmonic overtones. It is a non-master channel, much like vintage Orange amps, and when cranked the power section breaks up faster, delivering the most classic British crunch imaginable. </p>
+                    <div className='ora_clean'>
+                    <div className='ora_clean_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">Fender Stratocaster</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">EQD Dispatch Master</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Ludwig</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='ora_dirt_container'>
                         <h4>Clean</h4>
                         <ReactAudioPlayer 
@@ -135,7 +209,7 @@ class Amplifier extends Component {
                         controls/>
                     </div>
                         </div>
-                        <button onClick={() => this.addToStudio('orange rockerverb', OrangeAmp)}>Add to Studio</button>
+                        
                 </div> : null}
 
                 {this.state.fenderMenu ? <div className='fen_card'>
@@ -147,7 +221,34 @@ class Amplifier extends Component {
                     </div>
                     <h1>Fender Super Bassman</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat. Sed vulputate nulla non dolor gravida eleifend. Aliquam congue, sem a pretium lobortis, ante lectus egestas dolor, et congue tellus nunc semper quam. In sagittis ut diam a fermentum. </p>
-                    <div className='fen_jazz'></div>
+                    <div className='fen_jazz'>
+                    <div className='fen_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">Fender Stratocaster</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">EQD Dispatch Master</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Ludwig</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='psych_container'>
                         <h4>Jazzy</h4>
                         <ReactAudioPlayer 
@@ -177,11 +278,39 @@ class Amplifier extends Component {
                     <div className="amp-text">
                     <div className='hiwatt_logo'>
                     <div className='sol_big'>
-                    <button className='sol_add_button' onClick={() => this.addToStudio('soldano SLO 100', SoldanoAmp)}>Add to Studio</button></div>
+                    </div>
+                    <button className='sol_add_button' onClick={() => this.addToStudio('soldano SLO 100', SoldanoAmp)}>Add to Studio</button>
                     </div>
                     <h1>Soldano SLO 100</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
-                    <div className='sold_crunch'></div>
+                    <div className='sold_crunch'>
+                    <div className='sol_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">Peavey Rotor EXP</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">None</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Mapex</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='psych_container'>
                         <h4>Chugga</h4>
                         <ReactAudioPlayer 
@@ -193,7 +322,34 @@ class Amplifier extends Component {
                         controls/>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
-                    <div className='sold_crunch'></div>
+                    <div className='sold_crunch'>
+                    <div className='sol_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">Peavey Rotor EXP</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">None</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Mapex</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='ender_container'>
                         <h4>Thrasher</h4>
                         <ReactAudioPlayer 
@@ -205,12 +361,12 @@ class Amplifier extends Component {
                         controls/>
                     </div>
                     </div>
-                        {/* <button className='add_button' onClick={() => this.addToStudio('soldano SLO 100', SoldanoAmp)}>Add to Studio</button> */}
                 </div> : null}
                 {this.state.marshallMenu ? <div className='mar_card'>
                 <div className="amp-text">
                     <div className='marshall_logo'>
                     <div className='mar_big'></div>
+                    <button className='mar_add_button' onClick={() => this.addToStudio('marshall plexi', MarshallAmp)}>Add to Studio</button>
                     </div>
                     <h1>Marshall Plexi 100</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
@@ -226,7 +382,34 @@ class Amplifier extends Component {
                         controls/>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
-                    <div className='mar_solo'></div>
+                    <div className='mar_solo'>
+                    <div className='mar_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">PureSalem Bruiser</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">Cry Baby Mini Wah</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Mapex</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='ender_container'>
                         <h4>Solo</h4>
                         <ReactAudioPlayer 
@@ -238,7 +421,6 @@ class Amplifier extends Component {
                         controls/>
                     </div>
                     </div>
-                        <button onClick={() => this.addToStudio('marshall plexi', MarshallAmp)}>Add to Studio</button>
                 </div> : null}
             </div>
         )

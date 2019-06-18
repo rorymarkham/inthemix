@@ -24,10 +24,10 @@
     color: #232232;
     background: #fff;
     border: 2px solid #232232;
-    background-image: url('../../Assets/InTheMix.png');
+    /* background-image: url('../../Assets/InTheMix.png'); */
     background-size: contain;
     background-repeat: no-repeat;
-    height: 50px;
+    /* height: 50px; */
     box-shadow: 5px 5px 5px ;   
     }
 
@@ -50,10 +50,10 @@
     color: #232232;
     background: #fff;
     border: 2px solid #232232;
-    background-image: url('../../Assets/Pedal.png');
+    /* background-image: url('../../Assets/Pedal.png'); */
     background-size: contain;
     background-repeat: no-repeat;
-    height: 70px;
+    /* height: 70px; */
     box-shadow: 5px 5px 5px ;   
     }
 
@@ -76,10 +76,10 @@
     color: #232232;
     background: #fff;
     border: 2px solid #232232;
-    background-image: url('../../Assets/Amp.png');
+    /* background-image: url('../../Assets/Amp.png'); */
     background-size: contain;
     background-repeat: no-repeat;
-    height: 70px;
+    /* height: 70px; */
     box-shadow: 5px 5px 5px ;   
 }
 
@@ -103,10 +103,10 @@
     color: #232232;
     background: #fff;
     border: 2px solid #232232;
-    background-image: url('../../Assets/Studio.png');
+    /* background-image: url('../../Assets/Studio.png'); */
     background-size: contain;
     background-repeat: no-repeat;
-    height: 50px;
+    /* height: 50px; */
     box-shadow: 5px 5px 5px ;   
     
     }

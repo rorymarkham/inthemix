@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import {updateUser, clearUser, updateProduct, getProduct} from '../redux/userReducer'
 import {Link} from 'react-router-dom'
 import Home from '../Home/Home'
+import './Studio.css'
 
 class Studio extends Component {
     componentDidMount(){
@@ -38,8 +39,8 @@ class Studio extends Component {
                 <div key={i} >
                     <div className='product_container'>
                         <h4>{product.product_name}</h4>
-                        <img src={product.product_img} height="100%" width="235" alt="products yo"/>
-                        <button onClick={() => this.removeItem(product.studio_id)}>Remove From Studio</button>
+                        <img src={product.product_img} height="70%" width="" alt="products yo"/>
+                        <button className='remove_btn' onClick={() => this.removeItem(product.studio_id)}>Remove</button>
                     </div>
                 </div>
             )
@@ -50,9 +51,8 @@ class Studio extends Component {
                 <Home/>
                 {mappedProducts}
                 <div>
-                <button onClick={this.handleUserLogout}>Logout</button>
-                </div>
-                
+                <button  className='logout_btn' onClick={this.handleUserLogout}>Logout</button>
+                </div>               
             </div>
         )
     }

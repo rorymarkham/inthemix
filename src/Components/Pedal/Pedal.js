@@ -180,12 +180,39 @@ class Pedal extends Component {
                     <div className="amp-text">
                     <div className='eqd_logo'>
                     <div className='aca_big'>
-                    <button onClick={() => this.addToStudio('Acapulco Gold', AcaPedal)}>Add to Studio</button>
                     </div>
+                    <button className='add_button' onClick={() => this.addToStudio('Acapulco Gold', AcaPedal)}>Add to Studio</button>
                     </div>
                     <h1>Acapulco Gold</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
-                    <div className='aca_doom'></div>
+                    <div className='aca_doom'>
+                    <div className='aca_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">Gibson Les Paul Traditional</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">None</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Ludwig</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='psych_container'>
                         <h4>Doom</h4>
                         <ReactAudioPlayer 
@@ -197,7 +224,34 @@ class Pedal extends Component {
                         controls/>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
-                    <div className='aca_rock'></div>
+                    <div className='aca_rock'>
+                    <div className='aca_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">PureSalem Bruiser</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">Arrows</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Ludwig</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='ender_container'>
                     <h4>Doom N Roll</h4>
                         <ReactAudioPlayer 
@@ -214,12 +268,39 @@ class Pedal extends Component {
                     <div className="amp-text">
                     <div className='eqd_logo'>
                     <div className='aro_big'>
-                    <button onClick={() => this.addToStudio('Arrows', AroPedal)}>Add to Studio</button>
                     </div>
+                    <button className='add_button' onClick={() => this.addToStudio('Arrows', AroPedal)}>Add to Studio</button>
                     </div>
                     <h1>Arrows</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
-                    <div className='aro_rock'></div>
+                    <div className='aro_rock'>
+                    <div className='aca_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">Gibson RD Artist</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">None</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Ludwig</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='psych_container'>
                         <h4>Rocker</h4>
                         <ReactAudioPlayer 
@@ -231,7 +312,35 @@ class Pedal extends Component {
                         controls/>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
-                    <div className='aro_solo'></div>
+                    <div className='aro_solo'>
+                    <div className='aca_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">PureSalem Bruiser</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">EQD Dispatch Master</a>
+                                        <a href="#">Cry Baby Mini Wah</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Ludwig</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='ender_container'>
                     <h4>Solo</h4>
                         <ReactAudioPlayer 
@@ -248,12 +357,39 @@ class Pedal extends Component {
                     <div className="amp-text">
                     <div className='electro_logo'>
                     <div className='nep_big'>
-                    <button onClick={() => this.addToStudio('Nepenthes', NepPedal)}>Add to Studio</button>
                     </div>
+                    <button className='add_button' onClick={() => this.addToStudio('Nepenthes', NepPedal)}>Add to Studio</button>
                     </div>
                     <h1>Nepenthes</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
-                    <div className='nep_doom'></div>
+                    <div className='nep_doom'>
+                    <div className='aca_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">PureSalem Bruiser</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">None</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Ludwig</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='psych_container'>
                         <h4>Doom</h4>
                         <ReactAudioPlayer 
@@ -265,7 +401,34 @@ class Pedal extends Component {
                         controls/>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
-                    <div className='nep_rock'></div>
+                    <div className='nep_rock'>
+                    <div className='aca_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">Gibson Les Paul Traditional</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">None</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Ludwig</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='ender_container'>
                     <h4>Doom N Roll</h4>
                         <ReactAudioPlayer 
@@ -310,12 +473,39 @@ class Pedal extends Component {
                     <div className="amp-text">
                     <div className='eqd_logo'>
                     <div className='dis_big'>
-                    <button onClick={() => this.addToStudio('Dispatch Master', DisPedal)}>Add to Studio</button>
                     </div>
+                    <button className='add_button' onClick={() => this.addToStudio('Dispatch Master', DisPedal)}>Add to Studio</button>
                     </div>
                     <h1>Dispatch Master</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
-                    <div className='dis_clean'></div>
+                    <div className='dis_clean'>
+                    <div className='aca_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">Fender Stratocaster</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">EQD Pyramids</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Mapex</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='psych_container'>
                     <h4>Clean</h4>
                         <ReactAudioPlayer 
@@ -379,12 +569,40 @@ class Pedal extends Component {
                     <div className="amp-text">
                     <div className='eqd_logo'>
                     <div className='pyr_big'>
-                    <button onClick={() => this.addToStudio('pyramid', PyramidPedal)}>Add to Studio</button>
                     </div>
+                    <button className='add_button' onClick={() => this.addToStudio('pyramid', PyramidPedal)}>Add to Studio</button>
                     </div>
                     <h1>Pyramids</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
-                    <div className='pyr_chime'></div>
+                    <div className='pyr_chime'>
+                    <div className='aca_gear'><h5>GEAR USED:</h5>
+                            <div className='ora_dirt_guitar'>
+                                <div class="dirt_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_dropdown-content">
+                                        <a href="#">Fender Stratocaster</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_pedal'>
+                            <div class="dirt_pedal_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_pedal_dropdown-content">
+                                        <a href="#">EQD Dispatch Master</a>
+                                        <a href="#">EQD Arrows</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='ora_dirt_drum'>
+                            <div class="dirt_drum_dropdown">
+                                    <button class="dropbtn"></button>
+                                        <div class="dirt_drum_dropdown-content">
+                                        <a href="#">Ludwig</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='psych_container'>
                         <h4>Chimey Cleans</h4>
                         <ReactAudioPlayer 

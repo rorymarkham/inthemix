@@ -19,6 +19,19 @@
     margin-left: 1.5em;
 }
 
+.main{
+    height: 80%;
+    width: 80%;
+    background-image: url('../../Assets/Amp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: 2px solid #232232; */
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
 .orange_rockerverb {
     background-image: url('../../Assets/Orange.png');
     height: 100%;
@@ -85,8 +98,163 @@
     width: 535px;
     background-size: contain;
     background-repeat: no-repeat; 
-    margin-left: 18%
+    margin-left: 2%;
 }
+
+.ora_dirt_gear {
+    display: flex;
+    width: 250px;
+    height: 90px;
+    border: transparent;
+    margin-left: 35em;
+}
+
+.ora_dirt_guitar{
+    background-image: url('../../Assets/Guitar.png');
+    height: 100%;
+    width: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+.ora_dirt_guitar:hover{
+    cursor: pointer;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+}
+
+.dirt_dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dirt_dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dirt_dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    font-size: 9px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dirt_dropdown:hover .dirt_dropdown-content {display: block;}
+
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+.ora_dirt_pedal{
+    background-image: url('../../Assets/Pedal.png');
+    height: 100%;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1em
+}
+
+.ora_dirt_pedal:hover{
+    cursor: pointer;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+}
+
+.dirt_pedal_dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dirt_pedal_dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dirt_pedal_dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    font-size: 9px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dirt_pedal_dropdown:hover .dirt_pedal_dropdown-content {display: block;}
+
+.ora_dirt_drum{
+    background-image: url('../../Assets/Drum.png');
+    height: 100%;
+    width: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+.ora_dirt_drum:hover{
+    cursor: pointer;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+}
+
+.ora_dirt_drum:hover{
+    cursor: pointer;
+    -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; 
+}
+
+.dirt_drum_dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dirt_drum_dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dirt_drum_dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    font-size: 9px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dirt_drum_dropdown:hover .dirt_drum_dropdown-content {display: block;}
 
 .ora_clean{
     background-image: url('../../Assets/ORAClean.png');
@@ -94,7 +262,15 @@
     width: 235px;
     background-size: contain;
     background-repeat: no-repeat; 
-    margin-left: 35%
+    margin-left: 15%
+}
+
+.ora_clean_gear {
+    display: flex;
+    width: 250px;
+    height: 90px;
+    border: transparent;
+    margin-left: 20em;
 }
 
 .ora_dirt_container{
@@ -182,8 +358,17 @@
     width: 335px;
     background-size: contain;
     background-repeat: no-repeat; 
-    margin-left: 30%
+    margin-left: 15%
 }
+
+.fen_gear {
+    display: flex;
+    width: 250px;
+    height: 90px;
+    border: transparent;
+    margin-left: 25em;
+}
+
 
 .amp-text {
     width: 100%;
@@ -289,7 +474,15 @@
     width: 335px;
     background-size: contain;
     background-repeat: no-repeat; 
-    margin-left: 30%
+    margin-left: 12%
+}
+
+.sol_gear {
+    display: flex;
+    width: 250px;
+    height: 90px;
+    border: transparent;
+    margin-left: 25em;
 }
 
 .marshall_plexi {
@@ -356,7 +549,15 @@
     width: 335px;
     background-size: contain;
     background-repeat: no-repeat; 
-    margin-left: 30%
+    margin-left: 12%
+}
+
+.mar_gear {
+    display: flex;
+    width: 250px;
+    height: 90px;
+    border: transparent;
+    margin-left: 25em;
 }
 
 .sol_add_button {
@@ -372,7 +573,7 @@
     border: 2px solid pink;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 11em
+    
 }
 
 .sol_add_button:hover {
@@ -395,7 +596,6 @@
     border: 2px solid pink;
     text-transform: uppercase;
     font-weight: bold;
-    /* margin-top: 12em */
 }
 
 .fen_add_button:hover {
@@ -403,7 +603,53 @@
     border: 2px solid black;
     height: 39px;
     box-shadow: 5px 5px 5px ;   
-    }
+}
+
+.ora_add_button {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 0.5rem 0;
+    margin: 0.5rem 1rem;
+    width: 11rem;
+    background: transparent;
+    color: black;
+    border: 2px solid pink;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ora_add_button:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    height: 39px;
+    box-shadow: 5px 5px 5px ;   
+}
+
+.mar_add_button {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 0.5rem 0;
+    margin: 0.5rem 1rem;
+    width: 11rem;
+    background: transparent;
+    color: black;
+    border: 2px solid pink;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.mar_add_button:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    height: 39px;
+    box-shadow: 5px 5px 5px ;   
+}
+
+
 
 
     @-webkit-keyframes pulse {
