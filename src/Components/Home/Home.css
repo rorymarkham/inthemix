@@ -49,6 +49,10 @@
     margin-top: 1em
 }
 
+/* .img3:hover{
+   
+} */
+
 .img4{
     background-image: url('../../Assets/Drum.png');
     height: 100%;
@@ -58,6 +62,10 @@
     margin-top: 1em
 }
 
+/* .img4:hover{
+  
+} */
+
 .img5{
     background-image: url('../../Assets/Studio.png');
     height: 100%;
@@ -66,6 +74,13 @@
     background-repeat: no-repeat;
     margin-top: 1em
 }
+
+/* .img5:hover{
+    
+} */
+
+
+
 
 
 

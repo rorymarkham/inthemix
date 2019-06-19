@@ -69,8 +69,9 @@ class Studio extends Component {
                 <Home/>
                 {!this.state.edit?
                 <div className='welcome'>
-                    <h1>{this.props.firstname}'s Studio</h1>
-                    <button onClick={this.toggleEdit}>Edit</button>
+                    <h1>{this.props.firstname}'s Studio
+                    <button className='edit_btn' onClick={this.toggleEdit}>Edit</button>
+                    </h1>
                 </div>
                 :
                 <form onSubmit={e => e.preventDefault()}>

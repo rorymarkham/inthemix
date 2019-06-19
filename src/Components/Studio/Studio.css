@@ -25,7 +25,7 @@
     padding: 0.5rem 0;
     margin: 0.5rem 1rem;
     width: 11rem;
-    background: transparent;
+    background: white;
     color:black;
     border: 2px solid black;
     text-transform: uppercase;
@@ -33,7 +33,7 @@
 }
 
 .logout_btn:hover{
-    border: 2px solid black;
+    border: 2px solid red;
     background: white;
     color: black;
     box-shadow: 5px 5px 5px ;
@@ -68,5 +68,26 @@
     width: 400px;
     margin: auto;
     border: 2px solid black;
+}
+
+.edit_btn{
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 0.2rem 0;
+    margin: 0.5rem 1rem;
+    width: 3rem;
+    background: white;
+    color:black;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.edit_btn:hover{
+    border: 2px solid black;
+    background: pink;
+    color: black;
+    cursor: pointer
 }
 

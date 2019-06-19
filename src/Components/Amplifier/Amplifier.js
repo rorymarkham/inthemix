@@ -120,9 +120,7 @@ class Amplifier extends Component {
                     <div className='marshall_plexi' onClick={this.showMarshall}></div>
                 </div>
                     <div className='main' onClick={this.main}>
-                    {/* <h1>Pick an Amp to listen too</h1> */}
                     </div>
-                    {/* {this.state.menu ? <h1>Pick an Amp</h1>: null} */}
                 {this.state.orangeMenu ? <div className='ora_card'>
                     <div className="amp-text">
                     <div className='orange_logo'>

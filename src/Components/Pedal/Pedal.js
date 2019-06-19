@@ -43,8 +43,23 @@ class Pedal extends Component {
             dispatchMenu: false,
             superMenu: false,
             phaseMenu: false,
-            pyramidMenu: false
+            pyramidMenu: false,
+            pedalMain: false,
         }
+    }
+
+    showPedalMain = () => {
+        this.setState({
+            acapulcoMenu: false,
+            arrowsMenu: false,
+            nepenthesMenu: false,
+            ratMenu: false,
+            dispatchMenu: false,
+            superMenu: false,
+            phaseMenu: false,
+            pyramidMenu: false,
+            pedalMain: !this.state.acapulcoMenu
+        })
     }
 
     showAcapulco = () => {
@@ -56,7 +71,8 @@ class Pedal extends Component {
             dispatchMenu: false,
             superMenu: false,
             phaseMenu: false,
-            pyramidMenu: false
+            pyramidMenu: false,
+            pedalMain: false
         })
     }
 
@@ -69,7 +85,8 @@ class Pedal extends Component {
             dispatchMenu: false,
             superMenu: false,
             phaseMenu: false,
-            pyramidMenu: false
+            pyramidMenu: false,
+            pedalMain: false
         })
     }
 
@@ -82,7 +99,8 @@ class Pedal extends Component {
             dispatchMenu: false,
             superMenu: false,
             phaseMenu: false,
-            pyramidMenu: false
+            pyramidMenu: false,
+            pedalMain: false
         })
     }
 
@@ -95,7 +113,8 @@ class Pedal extends Component {
             dispatchMenu: false,
             superMenu: false,
             phaseMenu: false,
-            pyramidMenu: false
+            pyramidMenu: false,
+            pedalMain: false
         })
     }
 
@@ -108,7 +127,8 @@ class Pedal extends Component {
             dispatchMenu: !this.state.dispatchMenu,
             superMenu: false,
             phaseMenu: false,
-            pyramidMenu: false
+            pyramidMenu: false,
+            pedalMain: false
         })
     }
 
@@ -121,7 +141,8 @@ class Pedal extends Component {
             dispatchMenu: false,
             superMenu: !this.state.superMenu,
             phaseMenu: false,
-            pyramidMenu: false
+            pyramidMenu: false,
+            pedalMain: false
         })
     }
 
@@ -134,7 +155,8 @@ class Pedal extends Component {
             dispatchMenu: false,
             superMenu: false,
             phaseMenu: !this.state.phaseMenu,
-            pyramidMenu: false
+            pyramidMenu: false,
+            pedalMain: false
         })
     }
 
@@ -147,7 +169,8 @@ class Pedal extends Component {
             dispatchMenu: false,
             superMenu: false,
             phaseMenu: false,
-            pyramidMenu: !this.state.pyramidMenu
+            pyramidMenu: !this.state.pyramidMenu,
+            pedalMain: false
         })
     }
 
@@ -174,8 +197,10 @@ class Pedal extends Component {
                     <div className='acapulco' onClick={this.showAcapulco}></div>
                     <div className='arrows' onClick={this.showArrows}></div>
                     <div className='nepenthes' onClick={this.showNepenthes}></div>
-                    <div className='rat' onClick={this.showRat}></div>        
+                    <div className='rat' onClick={this.showRat}></div> 
                  </div>
+                    <div className ='pedal_main' onClick={this.pedalMain}>
+                    </div>       
                     {this.state.acapulcoMenu ? <div className='aca_card'>
                     <div className="amp-text">
                     <div className='eqd_logo'>
