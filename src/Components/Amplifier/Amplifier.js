@@ -158,11 +158,11 @@ class Amplifier extends Component {
                         </div>
                     </div>
                     <div className='ora_dirt_container'>
-                        <h4>Bitchin</h4>
+                        <h4>Tumbler</h4>
                         <ReactAudioPlayer 
                         src={Bitchin}
                         controls/>
-                        <h4>Bitchin Mix</h4>
+                        <h4>Tumbler Mix</h4>
                         <ReactAudioPlayer 
                         src={BitchinMix}
                         controls/>

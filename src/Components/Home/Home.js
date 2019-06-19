@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import './Home.css'
 import Login from '../Login/Login'
 import Navbar from '../Navbar/Navbar'
+import Carousel from "../../Carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 //images
 

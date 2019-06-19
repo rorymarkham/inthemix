@@ -6,6 +6,13 @@
     background: #fff;
 }
 
+.caro_container{
+    height: 500px;
+    width: 900px;
+    margin: auto;
+    margin-top: 5em
+}
+
 .logo {
     background-image: url('../../Assets/ITMLogo.png');
     height: 100%;
