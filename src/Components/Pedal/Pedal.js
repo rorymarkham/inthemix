@@ -209,7 +209,7 @@ class Pedal extends Component {
                     <button className='add_button' onClick={() => this.addToStudio('Acapulco Gold', AcaPedal)}>Add to Studio</button>
                     </div>
                     <h1>Acapulco Gold</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <p>The Acapulco Gold is a dirt-simple distortion Device modeled after the sound of a cranked vintage Model T amplifier, bringing the openness, clarity, and crunch that only a dimed tube amp can provide, at a fraction of the size, and without expensive maintenance costs!</p>
                     <div className='aca_doom'>
                     <div className='aca_gear'><h5>GEAR USED:</h5>
                             <div className='ora_dirt_guitar'>
@@ -248,7 +248,7 @@ class Pedal extends Component {
                         src={NoUse}
                         controls/>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <p>Since tone is in the hands, we decided to keep the controls of the Acapulco Gold as simple as possible. The footswitch turns the pedal on and off, and the giant knob controls the output volume. That’s it. The rest is at your fingertips. Want less gain? Turn down your guitar’s volume knob. Need a darker rhythm tone? Roll back your guitar’s tone control.</p>
                     <div className='aca_rock'>
                     <div className='aca_gear'><h5>GEAR USED:</h5>
                             <div className='ora_dirt_guitar'>

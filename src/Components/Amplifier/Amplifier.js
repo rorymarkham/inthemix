@@ -280,7 +280,7 @@ class Amplifier extends Component {
                     <button className='sol_add_button' onClick={() => this.addToStudio('soldano SLO 100', SoldanoAmp)}>Add to Studio</button>
                     </div>
                     <h1>Soldano SLO 100</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <p>Built on a dual channel design with independent preamps, a custom-designed transformer, and a three-band EQ with a presence control for total tone-sculpting mastery, this head is an absolute crown jewel in the collection of any enthusiast.</p>
                     <div className='sold_crunch'>
                     <div className='sol_gear'><h5>GEAR USED:</h5>
                             <div className='ora_dirt_guitar'>
@@ -319,7 +319,7 @@ class Amplifier extends Component {
                         src={ChuggaMix}
                         controls/>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <p>Built on a dual channel design with independent preamps, a custom-designed transformer, and a three-band EQ with a presence control for total tone-sculpting mastery, this head is an absolute crown jewel in the collection of any enthusiast.</p>
                     <div className='sold_crunch'>
                     <div className='sol_gear'><h5>GEAR USED:</h5>
                             <div className='ora_dirt_guitar'>
@@ -367,7 +367,7 @@ class Amplifier extends Component {
                     <button className='mar_add_button' onClick={() => this.addToStudio('marshall plexi', MarshallAmp)}>Add to Studio</button>
                     </div>
                     <h1>Marshall Plexi 100</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <p>While the 50 Watt 1987X head shares the same ‘Plexi’ front and rear panel features as the 100 Watt 1959SLP, it has its own distinctive sonic personality. More aggressive than the “60s ‘Plexi’s, the 1987X is much more of the “72 period, with a heady, sweet/aggressive tone.</p>
                     <div className='mar_solo'></div>
                     <div className='psych_container'>
                         <h4>Iso Track</h4>
@@ -379,7 +379,7 @@ class Amplifier extends Component {
                         src={PsychSurf}
                         controls/>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vel nisi in eleifend. Etiam lorem libero, blandit in magna eget, hendrerit suscipit erat.</p>
+                    <p>While the 50 Watt 1987X head shares the same ‘Plexi’ front and rear panel features as the 100 Watt 1959SLP, it has its own distinctive sonic personality. More aggressive than the “60s ‘Plexi’s, the 1987X is much more of the “72 period, with a heady, sweet/aggressive tone.</p>
                     <div className='mar_solo'>
                     <div className='mar_gear'><h5>GEAR USED:</h5>
                             <div className='ora_dirt_guitar'>

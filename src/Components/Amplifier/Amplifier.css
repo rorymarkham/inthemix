@@ -758,3 +758,23 @@
         transform: none;
         }
         } 
+
+        @media(max-width: 800px){
+            .main {
+              display: none;
+            }
+            .ora_big{
+                display: none;
+            }
+            .orange_logo{
+                display: none;
+            }
+
+            .ora_dirt{
+                display: none;
+            }
+
+            .ora_clean{
+                display: none;
+            }
+        }
